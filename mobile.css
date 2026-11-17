@@ -1,0 +1,35 @@
+/* mobile.css (V36): phone-first polish + app-style shell. Loaded last. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+a,button,summary,label,input,select{-webkit-tap-highlight-color:rgba(58,107,255,.25);touch-action:manipulation}
+img,video,canvas,svg{max-width:100%}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+.tbl-scroll table{min-width:520px}
+.app-grid>*,.app-card,.glass-card{min-width:0}
+.big-result,.result b{overflow-wrap:anywhere}
+/* notch / home-indicator safe areas (works with viewport-fit=cover) */
+.site-header{padding-top:env(safe-area-inset-top,0);height:calc(70px + env(safe-area-inset-top,0))!important;padding-left:max(22px,env(safe-area-inset-left,0))!important;padding-right:max(22px,env(safe-area-inset-right,0))!important}
+.nav{top:calc(69px + env(safe-area-inset-top,0))!important}
+/* bigger, easier touch targets and no iOS focus-zoom */
+@media(pointer:coarse){
+  .nav-link,.hub-btn,.button,.filter,.mini-btn,button,select,input:not([type=checkbox]):not([type=radio]):not([type=range]){min-height:44px}
+  input,select,textarea{font-size:16px!important}
+  .menu-toggle{width:44px!important;height:44px!important}
+}
+/* tab bar: hidden on desktop */
+.tabbar,.install-banner{display:none}
+@media(max-width:760px),(display-mode:standalone){
+  .tabbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:120;background:#0a1636;border-top:1px solid rgba(125,160,255,.22);padding:6px 6px calc(6px + env(safe-area-inset-bottom,0))}
+  .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:52px;border-radius:12px;color:#9fb0d8;font-size:11px;font-weight:600;text-decoration:none}
+  .tabbar a i{font-style:normal;font-size:20px;line-height:1}
+  .tabbar a.on{color:#fff;background:rgba(58,107,255,.28)}
+  body.has-tabbar{padding-bottom:calc(72px + env(safe-area-inset-bottom,0))}
+  .music-fab,.music-widget{bottom:calc(84px + env(safe-area-inset-bottom,0))!important}
+  .back-top{bottom:calc(84px + env(safe-area-inset-bottom,0))!important}
+  .toast{bottom:calc(90px + env(safe-area-inset-bottom,0))!important}
+  .install-banner{display:flex;align-items:center;gap:10px;position:fixed;left:12px;right:12px;bottom:calc(82px + env(safe-area-inset-bottom,0));z-index:130;background:#12276b;border:1px solid #7da0ff;border-radius:14px;padding:10px 12px;font-size:13px;color:#fff}
+  .install-banner span{flex:1}
+  .install-banner button{min-height:40px;border:0;border-radius:10px;padding:0 14px;font-weight:700;background:#3a6bff;color:#fff}
+  .install-banner .ib-x{background:transparent;padding:0 8px}
+}
+@media(display-mode:standalone){body{overscroll-behavior-y:none;-webkit-user-select:none;user-select:none}input,textarea,select{-webkit-user-select:text;user-select:text}}
+@media print{.tabbar,.install-banner{display:none!important}body.has-tabbar{padding-bottom:0}}
