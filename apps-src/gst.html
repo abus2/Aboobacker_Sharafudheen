@@ -1,0 +1,12 @@
+<div class="app-panel" id="gst" role="tabpanel"><div class="app-grid">
+        <div class="app-card glass-card"><h2>GST Calculator</h2><p class="sub">Add GST to a price, or take it out of a GST-inclusive price.</p>
+          <div class="fld"><label>MODE</label><div class="seg" id="gstMode"><button type="button" class="active" data-mode="add">Add GST</button><button type="button" data-mode="remove">Remove GST</button></div></div>
+          <div class="fld"><label for="gstAmount">AMOUNT (₹)</label><input id="gstAmount" type="number" inputmode="decimal" min="0" step="any" value="10000"></div>
+          <div class="fld"><label>GST RATE</label><div class="rate-chips" id="gstRates"><button type="button" data-rate="5">5%</button><button type="button" data-rate="12">12%</button><button type="button" class="active" data-rate="18">18%</button><button type="button" data-rate="28">28%</button></div></div>
+          <div class="fld"><label for="gstCustom">OR CUSTOM RATE (%)</label><input id="gstCustom" type="number" inputmode="decimal" min="0" max="100" step="any" placeholder="e.g. 3"></div>
+          <p class="note">Rates are editable because GST slabs can change. Check the current rate for your item before filing.</p></div>
+        <div class="app-card glass-card result"><div class="big-result"><small id="gstBigLabel">FINAL AMOUNT (INCL. GST)</small><strong id="gstTotal">₹0</strong></div>
+          <div class="kv"><div><span>Price before GST</span><b id="gstBase">₹0</b></div><div><span>GST @ <i id="gstRateShown" style="font-style:normal">18%</i></span><b id="gstTax">₹0</b></div><div><span>CGST (half)</span><b id="gstCgst">₹0</b></div><div><span>SGST / UTGST (half)</span><b id="gstSgst">₹0</b></div><div><span>Total with GST</span><b id="gstFinal">₹0</b></div></div>
+          <div class="copy-row"><button type="button" id="gstCopy">⧉ Copy result</button></div></div>
+      </div></div>
+

@@ -1,0 +1,12 @@
+<div class="app-panel" id="sip" role="tabpanel"><div class="app-grid">
+        <div class="app-card glass-card"><h2>SIP &amp; Compound Growth</h2><p class="sub">Estimate growth of a monthly investment, plus an optional lump sum.</p>
+          <div class="fld"><label for="sipM">MONTHLY INVESTMENT <b id="sipMv"></b></label><input id="sipMr" type="range" min="0" max="200000" step="500" value="5000"><input id="sipM" type="number" min="0" step="500" value="5000"></div>
+          <div class="fld"><label for="sipL">LUMP SUM TODAY (₹, optional)</label><input id="sipL" type="number" min="0" step="1000" value="0"></div>
+          <div class="fld"><label for="sipI">EXPECTED RETURN (p.a.) <b id="sipIv"></b></label><input id="sipIr" type="range" min="1" max="30" step="0.5" value="12"><input id="sipI" type="number" min="0" max="40" step="0.5" value="12"></div>
+          <div class="fld"><label for="sipY">PERIOD <b id="sipYv"></b></label><input id="sipYr" type="range" min="1" max="40" step="1" value="10"><input id="sipY" type="number" min="1" max="40" step="1" value="10"></div></div>
+        <div class="app-card glass-card result"><div class="big-result"><small>ESTIMATED VALUE</small><strong id="sipBig">₹0</strong></div>
+          <div class="kv"><div><span>Total invested</span><b id="sipInv">₹0</b></div><div><span>Estimated returns</span><b id="sipGain">₹0</b></div><div><span>Growth multiple</span><b id="sipMult">0×</b></div></div>
+          <div class="chart-box" id="sipChart"></div><div class="legend"><span>Estimated value</span><span class="b">Amount invested</span></div>
+          <p class="note">This is an illustration using a constant assumed return with monthly compounding. Real investment returns vary and can be negative. It is not financial advice.</p></div>
+      </div></div>
+

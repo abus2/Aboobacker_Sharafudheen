@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GST Calculator | Aboobacker Sharfudheen</title>
+<style>/* Apps hub: card gallery with Try now / Download */
+.app-hub{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
+.hub-card{display:flex;flex-direction:column;gap:10px;padding:24px;border-radius:20px;border:1px solid var(--p-line)}
+.hub-ico{width:46px;height:46px;border-radius:12px;background:#3a6bff;color:#fff;display:grid;place-items:center;font-size:21px;font-style:normal;font-weight:700}
+.hub-num{font-size:10px;letter-spacing:1.6px;color:#8fa2d0;font-weight:700}
+.hub-top{display:flex;justify-content:space-between;align-items:flex-start}
+.hub-card h3{font:600 20px var(--display);letter-spacing:-.03em}
+.hub-card p{font-size:12px;color:#a9b8de;line-height:1.7;flex:1}
+.hub-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+.hub-btn{display:flex;align-items:center;justify-content:center;gap:6px;height:42px;border-radius:12px;font:600 13px var(--font);cursor:pointer;border:1px solid var(--p-blue2);text-decoration:none}
+.hub-btn.primary{background:#3a6bff;color:#fff;border-color:#3a6bff}
+.hub-btn.ghost{background:transparent;color:#cfe0ff}
+.hub-btn:hover{background:#1d3fc7;color:#fff}
+.app-bar{display:flex;align-items:center;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.app-bar button{height:40px;padding:0 16px;border-radius:12px;border:1px solid var(--p-line);background:transparent;color:#cfe0ff;font:600 13px var(--font);cursor:pointer}
+.app-bar button:hover{background:#3a6bff;color:#fff}
+.app-bar b{font:600 16px var(--display)}
+.app-bar .hub-btn{margin-left:auto;padding:0 16px;height:40px}
+[hidden]{display:none!important}
+html[data-theme="light"] .hub-card p{color:#46567f}
+html[data-theme="light"] .hub-btn.ghost,html[data-theme="light"] .app-bar button{color:#1d3fc7}
+html[data-theme="light"] .hub-btn:hover,html[data-theme="light"] .app-bar button:hover{color:#fff}
+html[data-theme="light"] .hub-num{color:#5a6a95}
+@media(max-width:480px){.app-bar .hub-btn{margin-left:0}}
+
+.ty-wrap{overflow-x:auto}.ty-tb{width:100%;border-collapse:collapse;font-size:12px}.ty-tb th{text-align:left;font-size:9px;letter-spacing:1.4px;color:#8fa2d0;padding:8px}
+.ty-tb td{padding:9px 8px;border-top:1px solid var(--p-line)}.ty-tb .n{text-align:right;white-space:nowrap}.ty-tot td{font-weight:700}
+.inv-row{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-bottom:8px}
+.inv-row input{height:42px;border-radius:12px;border:1px solid var(--p-line);background:rgba(5,13,36,.7);color:#fff;padding:0 12px;font:600 14px var(--font);width:100%;min-width:0}
+html[data-theme="light"] .inv-row input{background:#fff;color:#0b1636}html[data-theme="light"] .ty-tb th{color:#5a6a95}
+@media print{body{background:#fff;color:#000}.app-card.result{border:0}}
+/* Websites showcase */
+.site-prev{position:relative;height:210px;overflow:hidden;border-radius:12px;border:1px solid var(--p-line);background:#fff}
+.site-prev iframe{position:absolute;left:0;top:0;width:1200px;height:760px;border:0;transform-origin:0 0;pointer-events:none}
+.site-meta{display:flex;gap:6px;flex-wrap:wrap}.site-meta span{font-size:10px;letter-spacing:.8px;padding:4px 9px;border-radius:20px;border:1px solid var(--p-line);color:#b9cbff}
+html[data-theme="light"] .site-meta span{color:#34457a}
+.web-cta{margin-top:34px;padding:28px;border-radius:20px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;border:1px solid var(--p-line)}
+.web-cta h3{font:600 22px var(--display)}.web-cta p{font-size:13px;color:#a9b8de}.web-cta .hub-btn{padding:0 24px}
+/* V36 mobile fixes */
+.app-grid>*,.app-card{min-width:0}.big-result{overflow-wrap:anywhere;font-size:clamp(22px,7vw,34px)}
+@media(pointer:coarse){input,select,textarea{font-size:16px}button,select,input:not([type=checkbox]):not([type=radio]){min-height:44px}}
+:root{--p-blue:#3a6bff;--p-blue2:#7da0ff;--p-line:rgba(125,160,255,.2);--p-ok:#38d39f;--p-bad:#ff6b81;--font:"DM Sans",system-ui,Arial,sans-serif;--display:"Space Grotesk","DM Sans",system-ui,Arial,sans-serif}*{box-sizing:border-box;margin:0;padding:0}body{background:#050d24;color:#edf2ff;font-family:var(--font);line-height:1.6;padding:24px}button,input,select{font-family:inherit}.sa{max-width:1000px;margin:0 auto}.sa-head{display:flex;align-items:center;gap:12px;margin-bottom:22px;font-size:11px;letter-spacing:1.6px;color:#8fa2d0;font-weight:700}.sa-head i{font-style:normal;width:30px;height:30px;border-radius:9px;background:#3a6bff;color:#fff;display:grid;place-items:center}.glass-card{background:#0b1a4a;border:1px solid var(--p-line)}.app-card.result{display:grid;gap:18px;align-content:start}.app-panel{display:block}.button{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 22px;border-radius:12px;background:#3a6bff;color:#fff;border:0;font-weight:600;cursor:pointer}.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#0a1636;border:1px solid var(--p-line);padding:10px 18px;border-radius:12px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .2s}.toast.show{opacity:1}@media(max-width:900px){.app-grid{grid-template-columns:1fr}}/* ============ APPS PAGE ============ */
+@keyframes panelIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.app-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.app-card{padding:30px;border-radius:20px}
+.app-card h2{font:600 26px var(--display);letter-spacing:-.04em;margin-bottom:6px}
+.app-card>p.sub{font-size:12px;color:#a9b8de;margin-bottom:22px;line-height:1.7}
+.fld{display:grid;gap:7px;margin-bottom:16px}
+.fld label{font-size:9px;letter-spacing:1.6px;color:#8fa2d0;font-weight:700;display:flex;justify-content:space-between}
+.fld label b{color:var(--p-blue2);font-weight:700;letter-spacing:.5px}
+.fld input[type=number],.fld input[type=text],.fld select{height:44px;border-radius:12px;border:1px solid var(--p-line);background:rgba(5,13,36,.7);color:#fff;padding:0 14px;font:600 15px var(--font);outline:0;transition:.25s;width:100%}
+.fld input:focus,.fld select:focus{border-color:var(--p-blue2);box-shadow:0 0 0 3px rgba(58,107,255,.22)}
+.fld input[type=range]{accent-color:var(--p-blue2);width:100%}
+.seg{display:flex;border:1px solid var(--p-line);border-radius:12px;overflow:hidden}
+.seg button{flex:1;background:none;border:0;color:#b6c3e6;padding:11px 8px;font:600 12px var(--font);cursor:pointer;transition:.2s}
+.seg button.active{background:var(--p-blue);color:#fff}
+.rate-chips{display:flex;gap:7px;flex-wrap:wrap}
+.rate-chips button{background:rgba(58,107,255,.08);border:1px solid var(--p-line);border-radius:20px;color:#cfe0ff;padding:7px 14px;font:600 12px var(--font);cursor:pointer;transition:.2s}
+.rate-chips button.active,.rate-chips button:hover{background:var(--p-blue);border-color:var(--p-blue2);color:#fff}
+.result{display:grid;gap:12px;align-content:start}
+.big-result{padding:22px;border-radius:16px;background:linear-gradient(135deg,rgba(58,107,255,.3),rgba(58,107,255,.08));border:1px solid rgba(125,160,255,.35)}
+.big-result small{font-size:9px;letter-spacing:1.8px;color:#b9cbff;font-weight:700}
+.big-result strong{display:block;font:700 clamp(30px,4vw,44px)/1.1 var(--display);margin-top:6px;letter-spacing:-.03em;word-break:break-word}
+.big-result.profit strong{color:var(--p-ok)}.big-result.loss strong{color:var(--p-bad)}
+.kv{display:grid;gap:0;border:1px solid var(--p-line);border-radius:14px;overflow:hidden}
+.kv div{display:flex;justify-content:space-between;gap:14px;padding:13px 16px;font-size:13px;border-bottom:1px solid var(--p-line)}
+.kv div:last-child{border-bottom:0}.kv span{color:#a9b8de}.kv b{font-weight:700;text-align:right}
+.bar-split{height:12px;border-radius:12px;overflow:hidden;display:flex;background:#0f1c4d}
+.bar-split i{display:block;height:100%;transition:width .5s cubic-bezier(.2,.8,.2,1)}
+.bar-split i.a{background:linear-gradient(90deg,#1d3fc7,#3a6bff)}.bar-split i.b{background:linear-gradient(90deg,#9cc0ff,#fff)}
+.legend{display:flex;gap:16px;font-size:10px;color:#a9b8de;flex-wrap:wrap}.legend span:before{content:"";display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px;background:#3a6bff}.legend span.b:before{background:#cfe0ff}
+.chart-box{border:1px solid var(--p-line);border-radius:14px;padding:14px;background:rgba(5,13,36,.45)}
+.chart-box svg{display:block;width:100%;height:auto}
+.note{font-size:10px;color:#8091bb;line-height:1.7}
+.copy-row{display:flex;gap:8px;flex-wrap:wrap}
+.copy-row button,.mini-btn{background:rgba(58,107,255,.1);border:1px solid var(--p-line);color:#cfe0ff;border-radius:10px;padding:9px 13px;font:600 11px var(--font);cursor:pointer;transition:.2s}
+.copy-row button:hover,.mini-btn:hover{background:var(--p-blue);color:#fff}
+.entry-list{display:grid;gap:8px;max-height:300px;overflow-y:auto;scrollbar-width:thin;padding-right:4px}
+.entry{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:12px;border:1px solid var(--p-line);background:rgba(58,107,255,.05);font-size:13px}
+.entry .dot{width:8px;height:8px;border-radius:50%;flex:none}.entry.income .dot{background:var(--p-ok)}.entry.expense .dot{background:var(--p-bad)}
+.entry .t{flex:1;min-width:0}.entry .t b{display:block;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.entry .t small{font-size:10px;color:#8fa2d0}
+.entry .amt{font-weight:700}.entry.income .amt{color:var(--p-ok)}.entry.expense .amt{color:var(--p-bad)}
+.entry button{background:none;border:0;color:#8fa2d0;cursor:pointer;font-size:15px;padding:4px 6px;border-radius:6px}.entry button:hover{color:#fff;background:rgba(255,107,129,.3)}
+.cat-row{display:grid;gap:5px;margin-bottom:11px}.cat-row div:first-child{display:flex;justify-content:space-between;font-size:12px}.cat-row div:first-child span{color:#a9b8de}
+.cat-row .track{height:7px;border-radius:7px;background:#0f1c4d;overflow:hidden}.cat-row .track i{display:block;height:100%;border-radius:7px;background:linear-gradient(90deg,#1d3fc7,#8fb0ff);transition:width .5s}
+.empty-note{padding:26px;text-align:center;font-size:12px;color:#8fa2d0;border:1px dashed var(--p-line);border-radius:12px}
+.add-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:480px){.add-row{grid-template-columns:1fr}.app-card{padding:22px}}
+
+</style></head>
+<body><main class="sa"><div class="sa-head"><i>%</i>GST CALCULATOR · BY ABOOBACKER SHARFUDHEEN · WORKS OFFLINE</div>
+<div class="app-panel active" id="gst" role="tabpanel"><div class="app-grid">
+        <div class="app-card glass-card"><h2>GST Calculator</h2><p class="sub">Add GST to a price, or take it out of a GST-inclusive price.</p>
+          <div class="fld"><label>MODE</label><div class="seg" id="gstMode"><button type="button" class="active" data-mode="add">Add GST</button><button type="button" data-mode="remove">Remove GST</button></div></div>
+          <div class="fld"><label for="gstAmount">AMOUNT (₹)</label><input id="gstAmount" type="number" inputmode="decimal" min="0" step="any" value="10000"></div>
+          <div class="fld"><label>GST RATE</label><div class="rate-chips" id="gstRates"><button type="button" data-rate="5">5%</button><button type="button" data-rate="12">12%</button><button type="button" class="active" data-rate="18">18%</button><button type="button" data-rate="28">28%</button></div></div>
+          <div class="fld"><label for="gstCustom">OR CUSTOM RATE (%)</label><input id="gstCustom" type="number" inputmode="decimal" min="0" max="100" step="any" placeholder="e.g. 3"></div>
+          <p class="note">Rates are editable because GST slabs can change. Check the current rate for your item before filing.</p></div>
+        <div class="app-card glass-card result"><div class="big-result"><small id="gstBigLabel">FINAL AMOUNT (INCL. GST)</small><strong id="gstTotal">₹0</strong></div>
+          <div class="kv"><div><span>Price before GST</span><b id="gstBase">₹0</b></div><div><span>GST @ <i id="gstRateShown" style="font-style:normal">18%</i></span><b id="gstTax">₹0</b></div><div><span>CGST (half)</span><b id="gstCgst">₹0</b></div><div><span>SGST / UTGST (half)</span><b id="gstSgst">₹0</b></div><div><span>Total with GST</span><b id="gstFinal">₹0</b></div></div>
+          <div class="copy-row"><button type="button" id="gstCopy">⧉ Copy result</button></div></div>
+      </div></div>
+
+</main><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>window.PF2={$:(s,r)=>(r||document).querySelector(s),$$:(s,r)=>[...(r||document).querySelectorAll(s)],reduce:false,
+ toast:m=>{const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(window.__t);window.__t=setTimeout(()=>t.classList.remove('show'),2200);}};
+window.PF_RENDER={esc:s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))};
+(function(){
+const {$,$$,toast,reduce}=window.PF2;
+ const inr=new Intl.NumberFormat('en-IN',{maximumFractionDigits:2,minimumFractionDigits:2});
+ const inr0=new Intl.NumberFormat('en-IN',{maximumFractionDigits:0});
+ const R=n=>'₹'+inr.format(Number.isFinite(n)?n:0), R0=n=>'₹'+inr0.format(Number.isFinite(n)?Math.round(n):0);
+ const num=(el,d=0)=>{const v=parseFloat(el.value);return Number.isFinite(v)?v:d;};
+ const copy=async(t,msg)=>{try{await navigator.clipboard.writeText(t);toast(msg||'Copied ✓');}catch(_){toast(t);}};
+ const setText=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+ const calc=window.PF_CALC={};
+
+ calc.gst=(amount,rate,mode)=>{
+  let base,gst,total;
+  if(mode==='add'){base=amount;gst=amount*rate/100;total=base+gst;}
+  else{total=amount;base=amount/(1+rate/100);gst=total-base;}
+  return{base,gst,total,half:gst/2};
+ };
+ (function(){
+  let rate=18,mode='add';const amt=$('#gstAmount'),custom=$('#gstCustom');
+  function run(){
+   const r=calc.gst(Math.max(num(amt),0),rate,mode);
+   setText('gstTotal',R(mode==='add'?r.total:r.base));
+   setText('gstBigLabel',mode==='add'?'FINAL AMOUNT (INCL. GST)':'PRICE BEFORE GST');
+   setText('gstBase',R(r.base));setText('gstTax',R(r.gst));setText('gstCgst',R(r.half));setText('gstSgst',R(r.half));setText('gstFinal',R(r.total));setText('gstRateShown',rate+'%');
+  }
+  $$('#gstRates button').forEach(b=>b.addEventListener('click',()=>{rate=+b.dataset.rate;custom.value='';$$('#gstRates button').forEach(x=>x.classList.toggle('active',x===b));run();}));
+  custom.addEventListener('input',()=>{const v=parseFloat(custom.value);if(Number.isFinite(v)&&v>=0&&v<=100){rate=v;$$('#gstRates button').forEach(x=>x.classList.remove('active'));run();}});
+  $$('#gstMode button').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;$$('#gstMode button').forEach(x=>x.classList.toggle('active',x===b));run();}));
+  amt.addEventListener('input',run);
+  $('#gstCopy').addEventListener('click',()=>copy(`Base ${$('#gstBase').textContent} | GST (${$('#gstRateShown').textContent}) ${$('#gstTax').textContent} | Total ${$('#gstFinal').textContent}`,'Result copied ✓'));
+  run();
+ })();
+
+})();</script></body></html>

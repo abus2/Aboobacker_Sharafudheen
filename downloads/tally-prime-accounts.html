@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tally Prime Accounts | Aboobacker Sharfudheen</title>
+<style>/* Apps hub: card gallery with Try now / Download */
+.app-hub{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
+.hub-card{display:flex;flex-direction:column;gap:10px;padding:24px;border-radius:20px;border:1px solid var(--p-line)}
+.hub-ico{width:46px;height:46px;border-radius:12px;background:#3a6bff;color:#fff;display:grid;place-items:center;font-size:21px;font-style:normal;font-weight:700}
+.hub-num{font-size:10px;letter-spacing:1.6px;color:#8fa2d0;font-weight:700}
+.hub-top{display:flex;justify-content:space-between;align-items:flex-start}
+.hub-card h3{font:600 20px var(--display);letter-spacing:-.03em}
+.hub-card p{font-size:12px;color:#a9b8de;line-height:1.7;flex:1}
+.hub-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+.hub-btn{display:flex;align-items:center;justify-content:center;gap:6px;height:42px;border-radius:12px;font:600 13px var(--font);cursor:pointer;border:1px solid var(--p-blue2);text-decoration:none}
+.hub-btn.primary{background:#3a6bff;color:#fff;border-color:#3a6bff}
+.hub-btn.ghost{background:transparent;color:#cfe0ff}
+.hub-btn:hover{background:#1d3fc7;color:#fff}
+.app-bar{display:flex;align-items:center;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.app-bar button{height:40px;padding:0 16px;border-radius:12px;border:1px solid var(--p-line);background:transparent;color:#cfe0ff;font:600 13px var(--font);cursor:pointer}
+.app-bar button:hover{background:#3a6bff;color:#fff}
+.app-bar b{font:600 16px var(--display)}
+.app-bar .hub-btn{margin-left:auto;padding:0 16px;height:40px}
+[hidden]{display:none!important}
+html[data-theme="light"] .hub-card p{color:#46567f}
+html[data-theme="light"] .hub-btn.ghost,html[data-theme="light"] .app-bar button{color:#1d3fc7}
+html[data-theme="light"] .hub-btn:hover,html[data-theme="light"] .app-bar button:hover{color:#fff}
+html[data-theme="light"] .hub-num{color:#5a6a95}
+@media(max-width:480px){.app-bar .hub-btn{margin-left:0}}
+
+.ty-wrap{overflow-x:auto}.ty-tb{width:100%;border-collapse:collapse;font-size:12px}.ty-tb th{text-align:left;font-size:9px;letter-spacing:1.4px;color:#8fa2d0;padding:8px}
+.ty-tb td{padding:9px 8px;border-top:1px solid var(--p-line)}.ty-tb .n{text-align:right;white-space:nowrap}.ty-tot td{font-weight:700}
+.inv-row{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-bottom:8px}
+.inv-row input{height:42px;border-radius:12px;border:1px solid var(--p-line);background:rgba(5,13,36,.7);color:#fff;padding:0 12px;font:600 14px var(--font);width:100%;min-width:0}
+html[data-theme="light"] .inv-row input{background:#fff;color:#0b1636}html[data-theme="light"] .ty-tb th{color:#5a6a95}
+@media print{body{background:#fff;color:#000}.app-card.result{border:0}}
+/* Websites showcase */
+.site-prev{position:relative;height:210px;overflow:hidden;border-radius:12px;border:1px solid var(--p-line);background:#fff}
+.site-prev iframe{position:absolute;left:0;top:0;width:1200px;height:760px;border:0;transform-origin:0 0;pointer-events:none}
+.site-meta{display:flex;gap:6px;flex-wrap:wrap}.site-meta span{font-size:10px;letter-spacing:.8px;padding:4px 9px;border-radius:20px;border:1px solid var(--p-line);color:#b9cbff}
+html[data-theme="light"] .site-meta span{color:#34457a}
+.web-cta{margin-top:34px;padding:28px;border-radius:20px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;border:1px solid var(--p-line)}
+.web-cta h3{font:600 22px var(--display)}.web-cta p{font-size:13px;color:#a9b8de}.web-cta .hub-btn{padding:0 24px}
+/* V36 mobile fixes */
+.app-grid>*,.app-card{min-width:0}.big-result{overflow-wrap:anywhere;font-size:clamp(22px,7vw,34px)}
+@media(pointer:coarse){input,select,textarea{font-size:16px}button,select,input:not([type=checkbox]):not([type=radio]){min-height:44px}}
+:root{--p-blue:#3a6bff;--p-blue2:#7da0ff;--p-line:rgba(125,160,255,.2);--p-ok:#38d39f;--p-bad:#ff6b81;--font:"DM Sans",system-ui,Arial,sans-serif;--display:"Space Grotesk","DM Sans",system-ui,Arial,sans-serif}*{box-sizing:border-box;margin:0;padding:0}body{background:#050d24;color:#edf2ff;font-family:var(--font);line-height:1.6;padding:24px}button,input,select{font-family:inherit}.sa{max-width:1000px;margin:0 auto}.sa-head{display:flex;align-items:center;gap:12px;margin-bottom:22px;font-size:11px;letter-spacing:1.6px;color:#8fa2d0;font-weight:700}.sa-head i{font-style:normal;width:30px;height:30px;border-radius:9px;background:#3a6bff;color:#fff;display:grid;place-items:center}.glass-card{background:#0b1a4a;border:1px solid var(--p-line)}.app-card.result{display:grid;gap:18px;align-content:start}.app-panel{display:block}.button{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 22px;border-radius:12px;background:#3a6bff;color:#fff;border:0;font-weight:600;cursor:pointer}.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#0a1636;border:1px solid var(--p-line);padding:10px 18px;border-radius:12px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .2s}.toast.show{opacity:1}@media(max-width:900px){.app-grid{grid-template-columns:1fr}}/* ============ APPS PAGE ============ */
+@keyframes panelIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.app-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.app-card{padding:30px;border-radius:20px}
+.app-card h2{font:600 26px var(--display);letter-spacing:-.04em;margin-bottom:6px}
+.app-card>p.sub{font-size:12px;color:#a9b8de;margin-bottom:22px;line-height:1.7}
+.fld{display:grid;gap:7px;margin-bottom:16px}
+.fld label{font-size:9px;letter-spacing:1.6px;color:#8fa2d0;font-weight:700;display:flex;justify-content:space-between}
+.fld label b{color:var(--p-blue2);font-weight:700;letter-spacing:.5px}
+.fld input[type=number],.fld input[type=text],.fld select{height:44px;border-radius:12px;border:1px solid var(--p-line);background:rgba(5,13,36,.7);color:#fff;padding:0 14px;font:600 15px var(--font);outline:0;transition:.25s;width:100%}
+.fld input:focus,.fld select:focus{border-color:var(--p-blue2);box-shadow:0 0 0 3px rgba(58,107,255,.22)}
+.fld input[type=range]{accent-color:var(--p-blue2);width:100%}
+.seg{display:flex;border:1px solid var(--p-line);border-radius:12px;overflow:hidden}
+.seg button{flex:1;background:none;border:0;color:#b6c3e6;padding:11px 8px;font:600 12px var(--font);cursor:pointer;transition:.2s}
+.seg button.active{background:var(--p-blue);color:#fff}
+.rate-chips{display:flex;gap:7px;flex-wrap:wrap}
+.rate-chips button{background:rgba(58,107,255,.08);border:1px solid var(--p-line);border-radius:20px;color:#cfe0ff;padding:7px 14px;font:600 12px var(--font);cursor:pointer;transition:.2s}
+.rate-chips button.active,.rate-chips button:hover{background:var(--p-blue);border-color:var(--p-blue2);color:#fff}
+.result{display:grid;gap:12px;align-content:start}
+.big-result{padding:22px;border-radius:16px;background:linear-gradient(135deg,rgba(58,107,255,.3),rgba(58,107,255,.08));border:1px solid rgba(125,160,255,.35)}
+.big-result small{font-size:9px;letter-spacing:1.8px;color:#b9cbff;font-weight:700}
+.big-result strong{display:block;font:700 clamp(30px,4vw,44px)/1.1 var(--display);margin-top:6px;letter-spacing:-.03em;word-break:break-word}
+.big-result.profit strong{color:var(--p-ok)}.big-result.loss strong{color:var(--p-bad)}
+.kv{display:grid;gap:0;border:1px solid var(--p-line);border-radius:14px;overflow:hidden}
+.kv div{display:flex;justify-content:space-between;gap:14px;padding:13px 16px;font-size:13px;border-bottom:1px solid var(--p-line)}
+.kv div:last-child{border-bottom:0}.kv span{color:#a9b8de}.kv b{font-weight:700;text-align:right}
+.bar-split{height:12px;border-radius:12px;overflow:hidden;display:flex;background:#0f1c4d}
+.bar-split i{display:block;height:100%;transition:width .5s cubic-bezier(.2,.8,.2,1)}
+.bar-split i.a{background:linear-gradient(90deg,#1d3fc7,#3a6bff)}.bar-split i.b{background:linear-gradient(90deg,#9cc0ff,#fff)}
+.legend{display:flex;gap:16px;font-size:10px;color:#a9b8de;flex-wrap:wrap}.legend span:before{content:"";display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px;background:#3a6bff}.legend span.b:before{background:#cfe0ff}
+.chart-box{border:1px solid var(--p-line);border-radius:14px;padding:14px;background:rgba(5,13,36,.45)}
+.chart-box svg{display:block;width:100%;height:auto}
+.note{font-size:10px;color:#8091bb;line-height:1.7}
+.copy-row{display:flex;gap:8px;flex-wrap:wrap}
+.copy-row button,.mini-btn{background:rgba(58,107,255,.1);border:1px solid var(--p-line);color:#cfe0ff;border-radius:10px;padding:9px 13px;font:600 11px var(--font);cursor:pointer;transition:.2s}
+.copy-row button:hover,.mini-btn:hover{background:var(--p-blue);color:#fff}
+.entry-list{display:grid;gap:8px;max-height:300px;overflow-y:auto;scrollbar-width:thin;padding-right:4px}
+.entry{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:12px;border:1px solid var(--p-line);background:rgba(58,107,255,.05);font-size:13px}
+.entry .dot{width:8px;height:8px;border-radius:50%;flex:none}.entry.income .dot{background:var(--p-ok)}.entry.expense .dot{background:var(--p-bad)}
+.entry .t{flex:1;min-width:0}.entry .t b{display:block;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.entry .t small{font-size:10px;color:#8fa2d0}
+.entry .amt{font-weight:700}.entry.income .amt{color:var(--p-ok)}.entry.expense .amt{color:var(--p-bad)}
+.entry button{background:none;border:0;color:#8fa2d0;cursor:pointer;font-size:15px;padding:4px 6px;border-radius:6px}.entry button:hover{color:#fff;background:rgba(255,107,129,.3)}
+.cat-row{display:grid;gap:5px;margin-bottom:11px}.cat-row div:first-child{display:flex;justify-content:space-between;font-size:12px}.cat-row div:first-child span{color:#a9b8de}
+.cat-row .track{height:7px;border-radius:7px;background:#0f1c4d;overflow:hidden}.cat-row .track i{display:block;height:100%;border-radius:7px;background:linear-gradient(90deg,#1d3fc7,#8fb0ff);transition:width .5s}
+.empty-note{padding:26px;text-align:center;font-size:12px;color:#8fa2d0;border:1px dashed var(--p-line);border-radius:12px}
+.add-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:480px){.add-row{grid-template-columns:1fr}.app-card{padding:22px}}
+
+/* Tally Prime page + Certificates page */
+.tp{display:grid;gap:18px}
+.tp-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 20px;border-radius:18px}
+.tp-co{display:grid;gap:4px;min-width:min(100%,260px)}
+.tp-co label{font-size:9px;letter-spacing:1.6px;color:#8fa2d0;font-weight:700}
+.tp-co input{background:transparent;border:0;border-bottom:1px dashed var(--p-line);color:inherit;font:600 20px var(--display);padding:2px 0;outline:none;width:100%}
+.tp-co input:focus{border-bottom-color:var(--p-blue2)}
+.tp-co select{background:transparent;border:0;border-bottom:1px dashed var(--p-line);color:inherit;font:600 20px var(--display);padding:2px 0;outline:none;width:100%;cursor:pointer}
+.tp-co select:focus{border-bottom-color:var(--p-blue2)}.tp-co select option{background:#0b1a4a;color:#edf2ff;font:500 14px var(--font)}
+.tp-co small{font-size:11px;color:#8fa2d0;margin-top:2px}
+.tp-saved{align-self:center;font-size:11px;font-weight:600;color:var(--p-ok);white-space:nowrap}
+.tp-acts .mini-btn.primary{background:var(--p-blue);border-color:var(--p-blue2);color:#fff}
+.tp-acts button.mini-btn:disabled,#tpMenu button:disabled{opacity:.4;cursor:not-allowed}
+.tp-check{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:#b6c3e6;line-height:1.5;margin:4px 0 16px;cursor:pointer}.tp-check input{margin-top:3px}
+.tp-alter{margin-top:26px;padding-top:22px;border-top:1px solid var(--p-line)}
+.tp-acts{display:flex;gap:8px;flex-wrap:wrap}
+.tp-acts .mini-btn{display:inline-flex;align-items:center;cursor:pointer;text-decoration:none;color:#cfe0ff}
+.tp-layout{display:grid;grid-template-columns:230px 1fr;gap:18px;align-items:start}
+.tp-gate{padding:18px;border-radius:18px;position:sticky;top:90px}
+.tp-gate h3{font:600 15px var(--display);margin-bottom:10px;letter-spacing:-.02em}
+#tpMenu{display:grid;gap:3px}
+#tpMenu small{font-size:8px;letter-spacing:1.8px;color:#8fa2d0;font-weight:700;margin:12px 0 4px}
+#tpMenu button{text-align:left;background:none;border:1px solid transparent;color:#b6c3e6;padding:9px 12px;border-radius:10px;font:600 13px var(--font);cursor:pointer;transition:.2s}
+#tpMenu button:hover{background:rgba(58,107,255,.1);color:#fff}
+#tpMenu button.active{background:var(--p-blue);color:#fff;border-color:var(--p-blue2)}
+.tp-main{padding:28px;border-radius:18px;min-height:460px;min-width:0}
+.tp-main h2{font:600 26px var(--display);letter-spacing:-.04em;margin-bottom:6px}
+.tp-main .sub{font-size:12px;color:#a9b8de;margin-bottom:20px;line-height:1.7}
+.tp-h3{font:600 15px var(--display);margin:0 0 12px;letter-spacing:-.02em}
+.tp-main .tp-h3{margin-top:22px}.tp-box .tp-h3{margin-top:0}
+.tp-2{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.tp-box{min-width:0}
+.tp-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tp-row .fld input:disabled{opacity:.6}
+.tp-kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.tp-kpi{padding:14px 16px;border:1px solid var(--p-line);border-radius:14px;background:rgba(58,107,255,.06)}
+.tp-kpi small{display:block;font-size:9px;letter-spacing:1.4px;color:#8fa2d0;font-weight:700;margin-bottom:4px;text-transform:uppercase}
+.tp-kpi strong{font:700 19px var(--display)}.tp-kpi .ok,.tp-ok:not(.bad){color:var(--p-ok)}.tp-kpi .bad,.tp-ok.bad{color:var(--p-bad)}
+.tp-ok{font-size:12px;font-weight:600;margin-top:14px}
+.tp-quick{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.tp-quick button{display:grid;gap:2px;text-align:left;padding:13px 14px;border-radius:12px;border:1px solid var(--p-line);background:rgba(58,107,255,.06);color:inherit;font:600 13px var(--font);cursor:pointer;transition:.2s}
+.tp-quick button small{font-size:10px;font-weight:500;color:#8fa2d0}
+.tp-quick button:hover{background:var(--p-blue);border-color:var(--p-blue2);color:#fff}.tp-quick button:hover small{color:#dbe6ff}
+.tp-hint,.tp-warn{padding:12px 14px;border-radius:12px;border:1px dashed var(--p-blue2);background:rgba(58,107,255,.08);font-size:12px;line-height:1.7;margin-bottom:16px}
+.tp-warn{border-color:var(--p-warn);background:rgba(255,193,90,.08);margin:0}
+.tp-link{background:none;border:0;color:var(--p-blue2);font:600 12px var(--font);cursor:pointer;text-decoration:underline}
+.tp-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.tp-tools select,.tp-tools input{height:40px;border-radius:12px;border:1px solid var(--p-line);background:rgba(5,13,36,.7);color:#fff;padding:0 12px;font:13px var(--font);min-width:150px}
+.tp-tools input{flex:1;min-width:180px}
+.tp-chip{font-size:10px;letter-spacing:1.2px;font-weight:700;padding:6px 12px;border-radius:20px;border:1px solid var(--p-line);color:var(--p-blue2)}
+.tp-wrap{overflow-x:auto;border:1px solid var(--p-line);border-radius:14px}
+.tp-tb{width:100%;border-collapse:collapse;font-size:13px;min-width:360px}
+.tp-tb th{font-size:9px;letter-spacing:1.4px;color:#8fa2d0;text-align:left;padding:11px 14px;border-bottom:1px solid var(--p-line);background:rgba(58,107,255,.07);text-transform:uppercase}
+.tp-tb td{padding:10px 14px;border-bottom:1px solid var(--p-line);vertical-align:top}
+.tp-tb small{color:#8fa2d0;font-size:11px}
+.tp-tb .n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tp-tb .ind{padding-left:30px;color:#b6c3e6}
+.tp-tb .tp-grp td{font-weight:700;background:rgba(58,107,255,.04)}
+.tp-tb .tp-tot td{font-weight:700;border-top:2px solid var(--p-blue2);background:rgba(58,107,255,.09)}
+.tp-x{background:none;border:0;color:#8fa2d0;cursor:pointer;font-size:14px;padding:4px 8px;border-radius:8px}.tp-x:hover{color:#fff;background:var(--p-bad)}
+.tp-sheet{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.tp-sheet>div{border:1px solid var(--p-line);border-radius:14px;overflow:hidden}.tp-sheet .tp-tb{min-width:0}
+.tp-list{display:grid;gap:8px}
+.tp-ent{display:flex;justify-content:space-between;gap:12px;padding:11px 14px;border:1px solid var(--p-line);border-radius:12px;background:rgba(58,107,255,.05);font-size:13px}
+.tp-ent small{display:block;color:#8fa2d0;font-size:11px;margin-top:2px}.tp-ent span{font-weight:700;white-space:nowrap}
+.tp-disc{max-width:760px}
+@media(max-width:900px){.tp-layout{grid-template-columns:1fr}.tp-gate{position:static}#tpMenu{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}#tpMenu small{grid-column:1/-1}.tp-2,.tp-sheet{grid-template-columns:1fr}.tp-main{padding:20px}}
+@media(max-width:520px){.tp-row{grid-template-columns:1fr}}
+html[data-theme="light"] .tp-tools select,html[data-theme="light"] .tp-tools input{background:#fff;color:#0b1636}
+html[data-theme="light"] #tpMenu button{color:#33447a}html[data-theme="light"] #tpMenu button:hover{color:#fff}
+html[data-theme="light"] .tp-tb .ind,html[data-theme="light"] .tp-main .sub{color:#4a5a85}
+
+/* certificates page */
+.cert-tools{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+.cert-page-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.cert-page-grid .certificate-card{cursor:pointer;min-height:250px;gap:0}
+.cert-page-grid .certificate-card:focus-visible{outline:2px solid var(--p-blue2);outline-offset:3px}
+.cert-page-grid .tag-list{margin:8px 0 14px}
+.cert-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px;padding-top:12px;border-top:1px solid var(--p-line);font-size:10px;letter-spacing:1px}
+.cert-status{color:var(--p-ok);font-weight:700}.cert-more{color:var(--p-blue2);font-weight:700}
+.cert-modal{padding:30px;max-width:640px}
+.cm-head{display:flex;gap:14px;align-items:center;margin-bottom:16px}.cm-head small{font-size:10px;letter-spacing:1.6px;color:var(--p-blue2);font-weight:700}.cm-head h3{font:600 22px/1.25 var(--display);letter-spacing:-.03em}
+.cm-img{border:1px solid var(--p-line);border-radius:14px;overflow:hidden;margin-bottom:16px}.cm-img img{display:block;width:100%;height:auto}
+.cert-modal>p{font-size:13px;line-height:1.8;color:#b6c3e6;margin-bottom:16px}
+.cert-modal .pm-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}.cert-modal .pm-grid small{display:block;font-size:9px;letter-spacing:1.6px;color:#8fa2d0;font-weight:700;margin-bottom:6px}
+.cert-modal .pm-actions{display:flex;gap:10px;flex-wrap:wrap}
+@media(max-width:520px){.cert-modal .pm-grid{grid-template-columns:1fr}}
+html[data-theme="light"] .cert-modal>p{color:#4a5a85}
+
+/* V37: buttons + date fields inside the Tally workspace (match the dark theme) */
+.tp .button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 24px;border-radius:12px;background:linear-gradient(110deg,#3a6bff,#1d3fc7);color:#fff;border:1px solid #7da0ff;font:600 14px var(--font);cursor:pointer;box-shadow:0 8px 24px rgba(58,107,255,.25)}
+.tp .button:hover{box-shadow:0 10px 32px rgba(58,107,255,.5)}
+.tp .fld input[type=date]{height:44px;border-radius:12px;border:1px solid var(--p-line);background:rgba(5,13,36,.7);color:#fff;padding:0 14px;font:600 15px var(--font);outline:0;color-scheme:dark;width:100%}
+.tp .fld input[type=date]:focus{border-color:var(--p-blue2);box-shadow:0 0 0 3px rgba(58,107,255,.22)}
+html[data-theme="light"] .tp .fld input[type=date]{background:#fff;color:#0b1636;color-scheme:light}
+.sa{max-width:1200px}</style></head>
+<body><main class="sa"><div class="sa-head"><i>₹</i>TALLY PRIME ACCOUNTS · BY ABOOBACKER SHARFUDHEEN · WORKS OFFLINE</div>
+
+<div class="tp" id="tpApp">
+ <div class="tp-top glass-card">
+  <div class="tp-co"><label for="tpCoSel">COMPANY</label><select id="tpCoSel" aria-label="Select company"></select><small id="tpCoMeta"></small></div>
+  <div class="tp-acts"><button type="button" class="mini-btn primary" id="tpNew">＋ New company</button><button type="button" class="mini-btn" id="tpSave">💾 Save</button><span class="tp-saved" id="tpSaved" aria-live="polite"></span><button type="button" class="mini-btn" id="tpSample">✦ Load sample company</button><button type="button" class="mini-btn" id="tpBackup">⇩ Backup</button><label class="mini-btn" for="tpRestore">⇧ Restore</label><input type="file" id="tpRestore" accept=".json,application/json" hidden><button type="button" class="mini-btn" id="tpDelCo">Delete company</button></div>
+ </div>
+ <div class="tp-layout">
+  <aside class="tp-gate glass-card" aria-label="Gateway of Tally">
+   <h3>Gateway of Tally</h3>
+   <nav id="tpMenu">
+    <button type="button" data-go="dashboard">Dashboard</button>
+    <small>MASTERS</small>
+    <button type="button" data-go="company">Company</button><button type="button" data-go="ledgers">Ledgers</button>
+    <small>VOUCHERS</small>
+    <button type="button" data-go="v:Contra">Contra</button><button type="button" data-go="v:Payment">Payment</button><button type="button" data-go="v:Receipt">Receipt</button><button type="button" data-go="v:Journal">Journal</button><button type="button" data-go="v:Sales">Sales</button><button type="button" data-go="v:Purchase">Purchase</button>
+    <small>REPORTS</small>
+    <button type="button" data-go="daybook">Day Book</button><button type="button" data-go="ledger">Ledger Account</button><button type="button" data-go="tb">Trial Balance</button><button type="button" data-go="pl">Profit &amp; Loss A/c</button><button type="button" data-go="bs">Balance Sheet</button>
+   </nav>
+  </aside>
+  <section class="tp-main glass-card" id="tpMain" aria-live="polite"></section>
+ </div>
+ <p class="note tp-disc">This is an independent learning and practice tool built by Aboobacker Sharfudheen. It is not affiliated with, endorsed by or a replacement for Tally Prime by Tally Solutions Pvt. Ltd. “Tally” and “Tally Prime” are trademarks of their owner.</p>
+</div>
+</main><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>window.PF2={$:(s,r)=>(r||document).querySelector(s),$$:(s,r)=>[...(r||document).querySelectorAll(s)],reduce:false,
+ toast:m=>{const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(window.__t);window.__t=setTimeout(()=>t.classList.remove('show'),2200);}};
+window.PF_RENDER={esc:s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))};
+// tally.html — Tally Prime-style accounts: MULTIPLE COMPANIES, ledgers, 6 voucher types, day book, ledger account,
+// trial balance, profit & loss, balance sheet. Saved only in this browser (localStorage).
+// An independent learning project — not affiliated with Tally Solutions Pvt. Ltd.
+(function(){
+ const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+ const toast=m=>{try{window.PF2.toast(m);}catch(_){}};
+ const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const inr=new Intl.NumberFormat('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
+ const R=n=>'₹'+inr.format(n);
+ const r2=n=>Math.round((n+Number.EPSILON)*100)/100;
+ const KEY='aboo-tallyprime-v2',OLDKEY='aboo-tallyprime-v1';
+ const GST_RE=/^\d{2}[A-Z]{5}\d{4}[A-Z][A-Z\d]Z[A-Z\d]$/;
+ const STARTER=[['Cash','Cash-in-Hand'],['Bank','Bank Accounts'],['Capital','Capital Account'],['Sales','Sales Accounts'],['Purchase','Purchase Accounts'],['Rent','Indirect Expenses'],['Salary','Indirect Expenses']];
+
+ // group -> nature  (A asset, L liability, I income, E expense)
+ const GROUPS={'Capital Account':'L','Loans (Liability)':'L','Current Liabilities':'L','Sundry Creditors':'L','Duties & Taxes':'L',
+  'Fixed Assets':'A','Current Assets':'A','Stock-in-Hand':'A','Cash-in-Hand':'A','Bank Accounts':'A','Sundry Debtors':'A',
+  'Sales Accounts':'I','Direct Incomes':'I','Indirect Incomes':'I',
+  'Purchase Accounts':'E','Direct Expenses':'E','Indirect Expenses':'E'};
+ const GROUP_ORDER=Object.keys(GROUPS);
+ const NATURE_NAME={L:'Liabilities',A:'Assets',I:'Income',E:'Expenses'};
+ const isCB=l=>l.group==='Cash-in-Hand'||l.group==='Bank Accounts';
+ const VTYPES=['Contra','Payment','Receipt','Journal','Sales','Purchase'];
+ const CFG={
+  Contra:{dr:'To (Dr) — Cash / Bank',cr:'From (Cr) — Cash / Bank',fd:isCB,fc:isCB,hd:'a Cash or Bank ledger',hc:'a Cash or Bank ledger'},
+  Payment:{dr:'Account (Dr) — paid to / expense',cr:'Paid from (Cr) — Cash / Bank',fd:()=>true,fc:isCB,hd:'any ledger',hc:'a Cash or Bank ledger'},
+  Receipt:{dr:'Received in (Dr) — Cash / Bank',cr:'Account (Cr) — received from',fd:isCB,fc:()=>true,hd:'a Cash or Bank ledger',hc:'any ledger'},
+  Journal:{dr:'Debit account (Dr)',cr:'Credit account (Cr)',fd:()=>true,fc:()=>true,hd:'any ledger',hc:'any ledger'},
+  Sales:{dr:'Party / Cash / Bank (Dr)',cr:'Sales ledger (Cr)',fd:()=>true,fc:l=>l.group==='Sales Accounts',hd:'any ledger',hc:'a ledger under Sales Accounts'},
+  Purchase:{dr:'Purchase ledger (Dr)',cr:'Party / Cash / Bank (Cr)',fd:l=>l.group==='Purchase Accounts',fc:()=>true,hd:'a ledger under Purchase Accounts',hc:'any ledger'}
+ };
+
+ // ---------- state ----------
+ // DB holds every company; S always points at the active one (null until the first company exists).
+ const uid=()=>'c'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+ function today(){const t=new Date();return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');}
+ function fyStartDefault(){const t=new Date(),y=t.getMonth()>=3?t.getFullYear():t.getFullYear()-1;return y+'-04-01';}
+ function clean(x){
+  if(!x||typeof x!=='object'||!Array.isArray(x.ledgers)||!Array.isArray(x.vouchers))return null;
+  const seen=new Set(),ledgers=[];
+  x.ledgers.forEach(l=>{if(!l||typeof l.name!=='string'||!GROUPS[l.group])return;const n=l.name.trim().slice(0,40);if(!n||seen.has(n.toLowerCase()))return;seen.add(n.toLowerCase());ledgers.push({name:n,group:l.group,open:Number.isFinite(+l.open)?r2(+l.open):0});});
+  const names=new Set(ledgers.map(l=>l.name)),vouchers=[];
+  x.vouchers.forEach(v=>{if(!v||!VTYPES.includes(v.type)||!names.has(v.dr)||!names.has(v.cr)||v.dr===v.cr)return;const a=+v.amt;if(!Number.isFinite(a)||a<=0)return;
+   vouchers.push({id:Number.isFinite(+v.id)?+v.id:Date.now()+vouchers.length,type:v.type,no:Number.isFinite(+v.no)?+v.no:vouchers.length+1,date:/^\d{4}-\d{2}-\d{2}$/.test(v.date)?v.date:today(),dr:v.dr,cr:v.cr,amt:r2(a),nar:String(v.nar||'').slice(0,80)});});
+  return {id:typeof x.id==='string'&&x.id?x.id.slice(0,30):uid(),company:String(x.company||'My Company').slice(0,50)||'My Company',
+   fy:/^\d{4}-\d{2}-\d{2}$/.test(x.fy)?x.fy:fyStartDefault(),addr:String(x.addr||'').slice(0,120),gstin:String(x.gstin||'').toUpperCase().slice(0,15),
+   created:Number.isFinite(+x.created)?+x.created:Date.now(),ledgers,vouchers};
+ }
+ let DB={active:'',companies:[]},S=null,savedAt=0;
+ (function load(){
+  try{
+   const raw=JSON.parse(localStorage.getItem(KEY)||'null');
+   if(raw&&Array.isArray(raw.companies)){DB.companies=raw.companies.map(clean).filter(Boolean);DB.active=String(raw.active||'');}
+   else{ // upgrade from the old single-company version: keep the person's books as their first company
+    const old=clean(JSON.parse(localStorage.getItem(OLDKEY)||'null'));
+    if(old&&(old.vouchers.length||old.ledgers.length>1||old.company!=='My Company'))DB.companies=[old];
+   }
+  }catch(_){}
+  const ids=new Set();DB.companies.forEach(c=>{if(ids.has(c.id))c.id=uid();ids.add(c.id);});
+  S=DB.companies.find(c=>c.id===DB.active)||DB.companies[0]||null;DB.active=S?S.id:'';
+ })();
+ const stamp=()=>{const e=$('#tpSaved');if(e)e.textContent=savedAt?'Saved ✓ '+new Date(savedAt).toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'}):'';};
+ const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(DB));savedAt=Date.now();stamp();return true;}catch(_){toast('Could not save in this browser');return false;}};
+ const dmy=s=>{const d=new Date(s+'T00:00:00');return isNaN(d)?s:d.toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});};
+ const fyLabel=c=>{const y=+c.fy.slice(0,4),cal=c.fy.slice(5)==='01-01';return 'FY '+(cal?y:y+'-'+String(y+1).slice(-2))+' · from '+dmy(c.fy);};
+ const fyEnd=c=>{const y=+c.fy.slice(0,4)+1,m=+c.fy.slice(5,7),d=+c.fy.slice(8,10),t=new Date(y,m-1,d-1);return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');};
+ const inFY=(c,date)=>date>=c.fy&&date<=fyEnd(c);
+ const L=n=>S.ledgers.find(l=>l.name===n);
+ const byName=(a,b)=>a.name.localeCompare(b.name);
+ function balances(){const b={};S.ledgers.forEach(l=>b[l.name]=l.open||0);S.vouchers.forEach(v=>{b[v.dr]=(b[v.dr]||0)+v.amt;b[v.cr]=(b[v.cr]||0)-v.amt;});Object.keys(b).forEach(k=>b[k]=r2(b[k]));return b;}
+ const drcr=x=>R(Math.abs(x))+' '+(x>=0?'Dr':'Cr');
+ const sortV=(a,b)=>a.date<b.date?-1:a.date>b.date?1:a.id-b.id;
+
+ // ---------- view state ----------
+ let view='dashboard',selLedger='',dbType='All',dbQ='';
+ const root=$('#tpApp'),main=$('#tpMain'),menu=$('#tpMenu');
+
+ const V={};
+
+ // ===== Dashboard =====
+ V.dashboard=()=>{
+  const b=balances(),sum=g=>r2(S.ledgers.filter(l=>l.group===g).reduce((t,l)=>t+b[l.name],0));
+  const cash=sum('Cash-in-Hand'),bank=sum('Bank Accounts'),rec=sum('Sundry Debtors'),pay=-sum('Sundry Creditors');
+  const pl=plCalc(b);
+  const kp=(l,v,c)=>`<div class="tp-kpi"><small>${l}</small><strong class="${c||''}">${v}</strong></div>`;
+  const empty=!S.vouchers.length;
+  return `<h2>Gateway of Tally</h2><p class="sub"><b>${esc(S.company)}</b> · ${esc(fyLabel(S))}${S.gstin?' · GSTIN '+esc(S.gstin):''}${S.addr?'<br>'+esc(S.addr):''}<br>${S.ledgers.length} ledgers · ${S.vouchers.length} vouchers</p>
+  ${empty?`<div class="tp-hint"><b>Start here:</b> create your ledgers, then pass vouchers (your sales, purchases, receipts and payments). Or press <b>Load sample company</b> (top) to see a complete working set of books.</div>`:''}
+  <div class="tp-kpis">${kp('Cash in hand',drcr(cash))}${kp('Bank balance',drcr(bank))}${kp('Receivable (debtors)',R(Math.max(rec,0)))}${kp('Payable (creditors)',R(Math.max(pay,0)))}${kp(pl.np>=0?'Net profit':'Net loss',R(Math.abs(pl.np)),pl.np>=0?'ok':'bad')}${kp('Total vouchers',S.vouchers.length)}</div>
+  <h3 class="tp-h3">Quick entry</h3>
+  <div class="tp-quick">${VTYPES.map(t=>`<button type="button" data-go="v:${t}">${t}<small>${S.vouchers.filter(v=>v.type===t).length} entries</small></button>`).join('')}</div>
+  <h3 class="tp-h3">Reports</h3>
+  <div class="tp-quick">${[['daybook','Day Book'],['ledger','Ledger Account'],['tb','Trial Balance'],['pl','Profit &amp; Loss'],['bs','Balance Sheet'],['ledgers','Ledgers']].map(x=>`<button type="button" data-go="${x[0]}">${x[1]}</button>`).join('')}</div>`;
+ };
+
+ // ===== Company (create / open / alter / delete) =====
+ V.company=()=>{
+  const rows=[...DB.companies].sort((a,c)=>c.created-a.created).map(c=>{const on=S&&c.id===S.id;
+   return `<tr><td><b>${esc(c.company)}</b>${on?' <span class="tp-chip">OPEN</span>':''}<br><small>${esc(fyLabel(c))}${c.gstin?' · '+esc(c.gstin):''}</small></td><td class="n">${c.ledgers.length}<br><small>ledgers</small></td><td class="n">${c.vouchers.length}<br><small>vouchers</small></td><td class="n">${on?'':`<button type="button" class="mini-btn" data-open="${esc(c.id)}">Open</button> `}<button type="button" class="tp-x" data-delco="${esc(c.id)}" aria-label="Delete company ${esc(c.company)}">✕</button></td></tr>`;}).join('');
+  const alter=S?`<div class="tp-box tp-alter" id="acForm"><h3 class="tp-h3">Alter company · ${esc(S.company)}</h3>
+   <div class="tp-row"><div class="fld"><label for="acName">COMPANY NAME</label><input id="acName" type="text" maxlength="50" value="${esc(S.company)}"></div><div class="fld"><label for="acFy">FINANCIAL YEAR BEGINS</label><input id="acFy" type="date" value="${esc(S.fy)}"></div></div>
+   <div class="tp-row"><div class="fld"><label for="acAddr">ADDRESS</label><input id="acAddr" type="text" maxlength="120" value="${esc(S.addr)}" placeholder="optional"></div><div class="fld"><label for="acGst">GSTIN</label><input id="acGst" type="text" maxlength="15" value="${esc(S.gstin)}" placeholder="optional"></div></div>
+   <button class="button" type="button" id="acSave">Save changes ✓</button></div>`:'';
+  return `<h2>Company</h2><p class="sub">${DB.companies.length?'Create a company, open another one, or alter the open company. Each company keeps its own ledgers and vouchers, saved automatically in this browser.':'Welcome! Create your first company to start entering ledgers and vouchers.'}</p>
+  <div class="tp-2"><div class="tp-box" id="coForm"><h3 class="tp-h3">Create company</h3>
+   <div class="fld"><label for="coName">COMPANY NAME</label><input id="coName" type="text" maxlength="50" placeholder="e.g. Aboo Trading Co."></div>
+   <div class="tp-row"><div class="fld"><label for="coFy">FINANCIAL YEAR BEGINS</label><input id="coFy" type="date" value="${fyStartDefault()}"></div><div class="fld"><label for="coGst">GSTIN (OPTIONAL)</label><input id="coGst" type="text" maxlength="15" placeholder="32ABCDE1234F1Z5"></div></div>
+   <div class="fld"><label for="coAddr">ADDRESS (OPTIONAL)</label><input id="coAddr" type="text" maxlength="120" placeholder="Shop no., street, city"></div>
+   <label class="tp-check"><input type="checkbox" id="coStarter" checked> Add starter ledgers (Cash, Bank, Capital, Sales, Purchase, Rent, Salary)</label>
+   <button class="button" type="button" id="coCreate">Create company ＋</button></div>
+  <div class="tp-box"><h3 class="tp-h3">Your companies (${DB.companies.length})</h3>${rows?`<div class="tp-wrap"><table class="tp-tb"><tbody>${rows}</tbody></table></div>`:'<div class="empty-note">No company yet.</div>'}</div></div>
+  ${alter}`;
+ };
+
+ // ===== Ledgers (master) =====
+ V.ledgers=()=>{
+  const b=balances();
+  const opts=['L','A','I','E'].map(n=>`<optgroup label="${NATURE_NAME[n]}">${GROUP_ORDER.filter(g=>GROUPS[g]===n).map(g=>`<option>${esc(g)}</option>`).join('')}</optgroup>`).join('');
+  const rows=[...S.ledgers].sort((a,c)=>GROUP_ORDER.indexOf(a.group)-GROUP_ORDER.indexOf(c.group)||byName(a,c)).map(l=>`<tr><td>${esc(l.name)}</td><td>${esc(l.group)}</td><td class="n">${b[l.name]?drcr(b[l.name]):'—'}</td><td class="n"><button type="button" class="tp-x" data-delled="${esc(l.name)}" aria-label="Delete ledger ${esc(l.name)}">✕</button></td></tr>`).join('');
+  return `<h2>Ledgers</h2><p class="sub">Create the accounts you will use in vouchers.</p>
+  <div class="tp-2"><div class="tp-box"><h3 class="tp-h3">Create ledger</h3>
+   <div class="fld"><label for="lgName">LEDGER NAME</label><input id="lgName" type="text" maxlength="40" placeholder="e.g. HDFC Bank, Rent, Ravi Traders"></div>
+   <div class="fld"><label for="lgGroup">UNDER (GROUP)</label><select id="lgGroup">${opts}</select></div>
+   <div class="tp-row"><div class="fld"><label for="lgOpen">OPENING BALANCE (₹)</label><input id="lgOpen" type="number" min="0" step="any" placeholder="0"></div><div class="fld"><label for="lgSide">Dr / Cr</label><select id="lgSide"><option value="Dr">Dr</option><option value="Cr">Cr</option></select></div></div>
+   <button class="button" type="button" id="lgSave">Create ledger ＋</button>
+   <p class="note" style="margin-top:12px">Tip: Cash and Bank go under Cash-in-Hand / Bank Accounts; customers under Sundry Debtors; suppliers under Sundry Creditors.</p></div>
+  <div class="tp-box"><h3 class="tp-h3">All ledgers (${S.ledgers.length})</h3><div class="tp-wrap"><table class="tp-tb"><thead><tr><th>Ledger</th><th>Group</th><th class="n">Closing</th><th></th></tr></thead><tbody>${rows}</tbody></table></div></div></div>`;
+ };
+
+ // ===== Voucher entry =====
+ V.voucher=t=>{
+  const c=CFG[t],list=f=>[...S.ledgers].filter(f).sort(byName);
+  const dl=list(c.fd),cl=list(c.fc);
+  const sel=(id,arr,hint)=>arr.length?`<select id="${id}"><option value="">Select ledger…</option>${arr.map(l=>`<option>${esc(l.name)}</option>`).join('')}</select>`:`<div class="tp-warn">No ledger yet. Create ${hint} first. <button type="button" class="tp-link" data-go="ledgers">Go to Ledgers →</button></div>`;
+  const no=S.vouchers.filter(v=>v.type===t).reduce((m,v)=>Math.max(m,v.no),0)+1;
+  const recent=S.vouchers.filter(v=>v.type===t).sort(sortV).slice(-6).reverse().map(v=>`<div class="tp-ent"><div><b>${esc(v.dr)} ← ${esc(v.cr)}</b><small>${esc(dmy(v.date))} · No. ${v.no}${v.nar?' · '+esc(v.nar):''}</small></div><span>${R(v.amt)}</span></div>`).join('')||'<div class="empty-note">No vouchers of this type yet.</div>';
+  return `<h2>${t} Voucher</h2><p class="sub">Voucher No. <b>${no}</b> · every voucher debits one ledger and credits another by the same amount.</p>
+  <div class="tp-2"><div class="tp-box" id="vForm">
+   <div class="tp-row"><div class="fld"><label for="vDate">DATE</label><input id="vDate" type="date" value="${today()}"></div><div class="fld"><label>VOUCHER TYPE</label><input type="text" value="${t}" disabled></div></div>
+   <div class="fld"><label for="vDr">${c.dr.toUpperCase()}</label>${sel('vDr',dl,c.hd)}</div>
+   <div class="fld"><label for="vCr">${c.cr.toUpperCase()}</label>${sel('vCr',cl,c.hc)}</div>
+   <div class="tp-row"><div class="fld"><label for="vAmt">AMOUNT (₹)</label><input id="vAmt" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div><div class="fld"><label for="vNar">NARRATION</label><input id="vNar" type="text" maxlength="80" placeholder="optional"></div></div>
+   <button class="button" type="button" id="vSave">Accept voucher ✓</button><p class="note" style="margin-top:10px">Press Enter in any field to accept.</p></div>
+  <div class="tp-box"><h3 class="tp-h3">Recent ${t.toLowerCase()} vouchers</h3><div class="tp-list">${recent}</div></div></div>`;
+ };
+
+ // ===== Day Book =====
+ V.daybook=()=>{
+  const q=dbQ.trim().toLowerCase();
+  const rows=[...S.vouchers].filter(v=>(dbType==='All'||v.type===dbType)&&(!q||(v.dr+' '+v.cr+' '+v.nar+' '+v.type).toLowerCase().includes(q))).sort(sortV);
+  const tot=r2(rows.reduce((t,v)=>t+v.amt,0));
+  const body=rows.map(v=>`<tr><td>${esc(dmy(v.date))}</td><td><b>${esc(v.dr)}</b><br><small>to ${esc(v.cr)}${v.nar?' · '+esc(v.nar):''}</small></td><td>${v.type}</td><td class="n">${v.no}</td><td class="n">${R(v.amt)}</td><td class="n"><button type="button" class="tp-x" data-delv="${v.id}" aria-label="Delete voucher">✕</button></td></tr>`).join('');
+  return `<h2>Day Book</h2><p class="sub">All vouchers in date order.</p>
+  <div class="tp-tools"><select id="dbType" aria-label="Voucher type">${['All',...VTYPES].map(t=>`<option${t===dbType?' selected':''}>${t}</option>`).join('')}</select><input id="dbQ" type="text" placeholder="Search ledger or narration…" value="${esc(dbQ)}" aria-label="Search"><button type="button" class="mini-btn" id="dbCsv">⇩ Export CSV</button></div>
+  ${rows.length?`<div class="tp-wrap"><table class="tp-tb"><thead><tr><th>Date</th><th>Particulars</th><th>Type</th><th class="n">No.</th><th class="n">Amount</th><th></th></tr></thead><tbody>${body}<tr class="tp-tot"><td colspan="4">Total (${rows.length} vouchers)</td><td class="n">${R(tot)}</td><td></td></tr></tbody></table></div>`:'<div class="empty-note">No vouchers to show.</div>'}`;
+ };
+
+ // ===== Ledger account =====
+ V.ledger=()=>{
+  const names=[...S.ledgers].sort(byName);
+  if(!names.length)return `<h2>Ledger Account</h2><div class="empty-note">Create a ledger first.</div>`;
+  if(!L(selLedger))selLedger=names[0].name;
+  const lg=L(selLedger);let bal=lg.open||0,dT=0,cT=0;
+  const rows=S.vouchers.filter(v=>v.dr===selLedger||v.cr===selLedger).sort(sortV).map(v=>{const isDr=v.dr===selLedger;bal=r2(bal+(isDr?v.amt:-v.amt));isDr?dT+=v.amt:cT+=v.amt;
+   return `<tr><td>${esc(dmy(v.date))}</td><td>${esc(isDr?v.cr:v.dr)}<br><small>${v.type} No. ${v.no}</small></td><td class="n">${isDr?R(v.amt):''}</td><td class="n">${isDr?'':R(v.amt)}</td><td class="n">${drcr(bal)}</td></tr>`;}).join('');
+  const op=lg.open?`<tr><td colspan="4">Opening balance</td><td class="n">${drcr(lg.open)}</td></tr>`:'';
+  return `<h2>Ledger Account</h2><p class="sub">Running balance of one ledger.</p>
+  <div class="tp-tools"><select id="ledSel" aria-label="Ledger">${names.map(l=>`<option${l.name===selLedger?' selected':''}>${esc(l.name)}</option>`).join('')}</select><span class="tp-chip">${esc(lg.group)}</span></div>
+  <div class="tp-wrap"><table class="tp-tb"><thead><tr><th>Date</th><th>Particulars</th><th class="n">Debit</th><th class="n">Credit</th><th class="n">Balance</th></tr></thead><tbody>${op}${rows}<tr class="tp-tot"><td colspan="2">Closing balance</td><td class="n">${R(r2(dT))}</td><td class="n">${R(r2(cT))}</td><td class="n">${drcr(bal)}</td></tr></tbody></table></div>`;
+ };
+
+ // ===== Trial balance =====
+ V.tb=()=>{
+  const b=balances();let D=0,C=0;
+  const rows=[...S.ledgers].sort((a,c)=>GROUP_ORDER.indexOf(a.group)-GROUP_ORDER.indexOf(c.group)||byName(a,c)).filter(l=>Math.abs(b[l.name])>=0.005).map(l=>{const x=b[l.name];x>0?D+=x:C-=x;return `<tr><td>${esc(l.name)}<br><small>${esc(l.group)}</small></td><td class="n">${x>0?R(x):''}</td><td class="n">${x<0?R(-x):''}</td></tr>`;}).join('');
+  const diff=r2(S.ledgers.reduce((t,l)=>t+(l.open||0),0));let extra='';
+  if(diff>0){C+=diff;extra=`<tr><td><i>Difference in opening balances</i></td><td></td><td class="n">${R(diff)}</td></tr>`;}
+  else if(diff<0){D-=diff;extra=`<tr><td><i>Difference in opening balances</i></td><td class="n">${R(-diff)}</td><td></td></tr>`;}
+  D=r2(D);C=r2(C);
+  return `<h2>Trial Balance</h2><p class="sub">Closing balance of every ledger.</p>
+  ${rows||extra?`<div class="tp-wrap"><table class="tp-tb"><thead><tr><th>Particulars</th><th class="n">Debit</th><th class="n">Credit</th></tr></thead><tbody>${rows}${extra}<tr class="tp-tot"><td>Grand Total</td><td class="n">${R(D)}</td><td class="n">${R(C)}</td></tr></tbody></table></div><p class="tp-ok ${Math.abs(D-C)<0.005?'':'bad'}">${Math.abs(D-C)<0.005?'✓ Trial balance is tallied':'Difference: '+R(Math.abs(D-C))}</p>`:'<div class="empty-note">The trial balance appears once ledgers have balances.</div>'}`;
+ };
+
+ // ===== P&L and balance sheet helpers =====
+ function plCalc(b){
+  const inc={},exp={};let I=0,E=0,gi=0,ge=0;
+  S.ledgers.forEach(l=>{const n=GROUPS[l.group],x=b[l.name];
+   if(n==='I'){const a=r2(-x);if(Math.abs(a)>=0.005){(inc[l.group]=inc[l.group]||[]).push([l.name,a]);I+=a;if(l.group!=='Indirect Incomes')gi+=a;}}
+   if(n==='E'){const a=r2(x);if(Math.abs(a)>=0.005){(exp[l.group]=exp[l.group]||[]).push([l.name,a]);E+=a;if(l.group!=='Indirect Expenses')ge+=a;}}});
+  return {inc,exp,I:r2(I),E:r2(E),np:r2(I-E),gp:r2(gi-ge)};
+ }
+ const sideRows=(groups,order)=>order.filter(g=>groups[g]).map(g=>{const t=r2(groups[g].reduce((s,x)=>s+x[1],0));
+  return `<tr class="tp-grp"><td>${esc(g)}</td><td class="n">${R(t)}</td></tr>`+groups[g].map(x=>`<tr><td class="ind">${esc(x[0])}</td><td class="n">${R(x[1])}</td></tr>`).join('');}).join('');
+ const sheet=(lt,lrows,ltot,rt,rrows,rtot)=>`<div class="tp-sheet"><div><table class="tp-tb"><thead><tr><th>${lt}</th><th class="n">₹</th></tr></thead><tbody>${lrows}<tr class="tp-tot"><td>Total</td><td class="n">${R(ltot)}</td></tr></tbody></table></div><div><table class="tp-tb"><thead><tr><th>${rt}</th><th class="n">₹</th></tr></thead><tbody>${rrows}<tr class="tp-tot"><td>Total</td><td class="n">${R(rtot)}</td></tr></tbody></table></div></div>`;
+
+ V.pl=()=>{
+  const p=plCalc(balances());
+  if(!p.I&&!p.E)return `<h2>Profit &amp; Loss A/c</h2><div class="empty-note">Appears once you have income or expense ledgers with entries.</div>`;
+  let left=sideRows(p.exp,['Purchase Accounts','Direct Expenses','Indirect Expenses']),right=sideRows(p.inc,['Sales Accounts','Direct Incomes','Indirect Incomes']);
+  let lt=p.E,rt=p.I;
+  if(p.np>=0){left+=`<tr class="tp-grp"><td>Net Profit</td><td class="n">${R(p.np)}</td></tr>`;lt=r2(lt+p.np);}
+  else{right+=`<tr class="tp-grp"><td>Net Loss</td><td class="n">${R(-p.np)}</td></tr>`;rt=r2(rt-p.np);}
+  return `<h2>Profit &amp; Loss A/c</h2><p class="sub">Income and expense ledgers (no closing stock adjustment).</p>
+  <div class="tp-kpis"><div class="tp-kpi"><small>Total income</small><strong>${R(p.I)}</strong></div><div class="tp-kpi"><small>Total expenses</small><strong>${R(p.E)}</strong></div><div class="tp-kpi"><small>Gross profit</small><strong class="${p.gp>=0?'ok':'bad'}">${R(Math.abs(p.gp))}${p.gp<0?' (loss)':''}</strong></div><div class="tp-kpi"><small>${p.np>=0?'Net profit':'Net loss'}</small><strong class="${p.np>=0?'ok':'bad'}">${R(Math.abs(p.np))}</strong></div></div>
+  ${sheet('Expenses',left,lt,'Income',right,rt)}`;
+ };
+
+ V.bs=()=>{
+  const b=balances(),p=plCalc(b),liab={},asset={};let LT=0,AT=0;
+  S.ledgers.forEach(l=>{const n=GROUPS[l.group];if(n!=='A'&&n!=='L')return;const x=b[l.name];if(Math.abs(x)<0.005)return;
+   if(x>0){(asset[l.group]=asset[l.group]||[]).push([l.name,x]);AT+=x;}else{(liab[l.group]=liab[l.group]||[]).push([l.name,-x]);LT-=x;}});
+  const order=GROUP_ORDER;let lr=sideRows(liab,order),ar=sideRows(asset,order);
+  const diff=r2(S.ledgers.reduce((t,l)=>t+(l.open||0),0));
+  if(p.np>0.005){lr+=`<tr class="tp-grp"><td>Profit &amp; Loss A/c (net profit)</td><td class="n">${R(p.np)}</td></tr>`;LT+=p.np;}
+  else if(p.np<-0.005){ar+=`<tr class="tp-grp"><td>Profit &amp; Loss A/c (net loss)</td><td class="n">${R(-p.np)}</td></tr>`;AT-=p.np;}
+  if(diff>0.005){lr+=`<tr class="tp-grp"><td><i>Difference in opening balances</i></td><td class="n">${R(diff)}</td></tr>`;LT+=diff;}
+  else if(diff<-0.005){ar+=`<tr class="tp-grp"><td><i>Difference in opening balances</i></td><td class="n">${R(-diff)}</td></tr>`;AT-=diff;}
+  LT=r2(LT);AT=r2(AT);
+  if(!LT&&!AT)return `<h2>Balance Sheet</h2><div class="empty-note">Appears once asset or liability ledgers have balances.</div>`;
+  return `<h2>Balance Sheet</h2><p class="sub">Closing position of assets and liabilities.</p>${sheet('Liabilities',lr,LT,'Assets',ar,AT)}<p class="tp-ok ${Math.abs(LT-AT)<0.005?'':'bad'}">${Math.abs(LT-AT)<0.005?'✓ Balance sheet is tallied':'Difference: '+R(Math.abs(LT-AT))}</p>`;
+ };
+
+ // ---------- render ----------
+ function go(v){
+  view=v;render();
+  if(window.matchMedia('(max-width:900px)').matches)main.scrollIntoView({behavior:'smooth',block:'start'});
+ }
+ function renderTop(){
+  const sel=$('#tpCoSel');
+  sel.innerHTML=DB.companies.length?DB.companies.map(c=>`<option value="${esc(c.id)}"${S&&c.id===S.id?' selected':''}>${esc(c.company)}</option>`).join(''):'<option value="">No company yet</option>';
+  sel.disabled=!DB.companies.length;
+  $('#tpCoMeta').textContent=S?fyLabel(S)+(S.gstin?' · GSTIN '+S.gstin:''):'Create your first company to begin';
+  $('#tpSave').disabled=!S;$('#tpDelCo').disabled=!S;$('#tpBackup').disabled=!DB.companies.length;
+  stamp();
+ }
+ function render(){
+  if(!S&&view!=='company')view='company';
+  const [k,arg]=view.split(':');
+  main.innerHTML=k==='v'?V.voucher(arg):V[k]();
+  $$('#tpMenu button').forEach(b=>{b.classList.toggle('active',b.dataset.go===view);b.disabled=!S&&b.dataset.go!=='company';});
+  renderTop();
+  if(k==='v'){const f=$('#vDr')||$('#vCr');if(f&&!(window.matchMedia('(max-width:900px)').matches))f.focus();}
+ }
+ function openCompany(id,quiet){
+  const c=DB.companies.find(x=>x.id===id);if(!c)return;
+  S=c;DB.active=c.id;save();selLedger='';dbType='All';dbQ='';view='dashboard';render();if(!quiet)toast('Opened “'+c.company+'”');
+ }
+
+ // ---------- events ----------
+ root.addEventListener('click',e=>{
+  const g=e.target.closest('[data-go]');if(g){go(g.dataset.go);return;}
+  const dv=e.target.closest('[data-delv]');
+  if(dv){if(confirm('Delete this voucher?')){S.vouchers=S.vouchers.filter(v=>String(v.id)!==dv.dataset.delv);save();render();toast('Voucher deleted');}return;}
+  const dlg=e.target.closest('[data-delled]');
+  if(dlg){const n=dlg.dataset.delled;if(S.vouchers.some(v=>v.dr===n||v.cr===n)){toast('This ledger is used in vouchers — delete those first');return;}
+   if(confirm('Delete ledger "'+n+'"?')){S.ledgers=S.ledgers.filter(l=>l.name!==n);save();render();toast('Ledger deleted');}return;}
+  const op=e.target.closest('[data-open]');if(op){openCompany(op.dataset.open);return;}
+  const dc=e.target.closest('[data-delco]');if(dc){deleteCompany(dc.dataset.delco);return;}
+  if(e.target.id==='coCreate')createCompany();
+  if(e.target.id==='acSave')alterCompany();
+  if(e.target.id==='lgSave')saveLedger();
+  if(e.target.id==='vSave')saveVoucher();
+  if(e.target.id==='dbCsv')exportCsv();
+ });
+ root.addEventListener('change',e=>{
+  if(e.target.id==='dbType'){dbType=e.target.value;render();}
+  if(e.target.id==='ledSel'){selLedger=e.target.value;render();}
+  if(e.target.id==='tpCoSel'&&e.target.value)openCompany(e.target.value);
+ });
+ root.addEventListener('input',e=>{
+  if(e.target.id==='dbQ'){dbQ=e.target.value;const pos=e.target.selectionStart;render();const i=$('#dbQ');i.focus();try{i.setSelectionRange(pos,pos);}catch(_){}}
+ });
+ root.addEventListener('keydown',e=>{
+  if(e.key!=='Enter'||e.target.tagName==='BUTTON')return;
+  if(e.target.closest('#vForm')){e.preventDefault();saveVoucher();}
+  else if(e.target.closest('#coForm')&&e.target.type!=='checkbox'){e.preventDefault();createCompany();}
+  else if(e.target.closest('#acForm')){e.preventDefault();alterCompany();}
+  else if(e.target.id==='lgName'||e.target.id==='lgOpen'){e.preventDefault();saveLedger();}
+ });
+ function companyInput(pfx,ignoreId){
+  const name=$('#'+pfx+'Name').value.trim().slice(0,50),fy=$('#'+pfx+'Fy').value,addr=$('#'+pfx+'Addr').value.trim().slice(0,120),gstin=$('#'+pfx+'Gst').value.trim().toUpperCase();
+  if(!name){toast('Enter a company name');$('#'+pfx+'Name').focus();return null;}
+  if(DB.companies.some(c=>c.id!==ignoreId&&c.company.toLowerCase()===name.toLowerCase())){toast('A company with this name already exists');return null;}
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(fy)){toast('Choose the date your financial year begins');return null;}
+  if(gstin&&!GST_RE.test(gstin)){toast('GSTIN must be 15 characters, e.g. 32ABCDE1234F1Z5');$('#'+pfx+'Gst').focus();return null;}
+  return {name,fy,addr,gstin};
+ }
+ function createCompany(){
+  const i=companyInput('co');if(!i)return;
+  const starter=$('#coStarter').checked;
+  const c={id:uid(),company:i.name,fy:i.fy,addr:i.addr,gstin:i.gstin,created:Date.now(),
+   ledgers:(starter?STARTER:[STARTER[0]]).map(x=>({name:x[0],group:x[1],open:0})),vouchers:[]};
+  DB.companies.push(c);S=c;DB.active=c.id;save();selLedger='';dbType='All';dbQ='';view='dashboard';render();toast('Company “'+c.company+'” created and saved ✓');
+ }
+ function alterCompany(){
+  const i=companyInput('ac',S.id);if(!i)return;
+  S.company=i.name;S.fy=i.fy;S.addr=i.addr;S.gstin=i.gstin;save();render();toast('Company details saved ✓');
+ }
+ function deleteCompany(id){
+  const c=DB.companies.find(x=>x.id===id);if(!c)return;
+  if(!confirm('Delete company “'+c.company+'” with its '+c.ledgers.length+' ledgers and '+c.vouchers.length+' vouchers?\n\nThis cannot be undone. Tip: press Backup first.'))return;
+  DB.companies=DB.companies.filter(x=>x.id!==id);
+  if(S&&S.id===id){S=DB.companies[0]||null;DB.active=S?S.id:'';selLedger='';dbType='All';dbQ='';view=S?'dashboard':'company';}
+  save();render();toast('Company deleted');
+ }
+
+ function saveLedger(){
+  const name=$('#lgName').value.trim().slice(0,40),group=$('#lgGroup').value,open=parseFloat($('#lgOpen').value)||0,side=$('#lgSide').value;
+  if(!name){toast('Enter a ledger name');$('#lgName').focus();return;}
+  if(S.ledgers.some(l=>l.name.toLowerCase()===name.toLowerCase())){toast('A ledger with this name already exists');return;}
+  if(open<0){toast('Opening balance cannot be negative');return;}
+  S.ledgers.push({name,group,open:r2(side==='Dr'?open:-open)});save();render();toast('Ledger created ✓');$('#lgName').focus();
+ }
+ function saveVoucher(){
+  const t=view.split(':')[1],dr=$('#vDr')?.value,cr=$('#vCr')?.value,a=parseFloat($('#vAmt').value),date=$('#vDate').value;
+  if(!date){toast('Choose a date');return;}
+  if(!dr||!cr){toast('Select both ledgers');return;}
+  if(dr===cr){toast('Debit and credit ledgers must be different');return;}
+  if(!Number.isFinite(a)||a<=0){toast('Enter an amount greater than 0');$('#vAmt').focus();return;}
+  const no=S.vouchers.filter(v=>v.type===t).reduce((m,v)=>Math.max(m,v.no),0)+1;
+  S.vouchers.push({id:Date.now()+Math.floor(Math.random()*1000),type:t,no,date,dr,cr,amt:r2(a),nar:($('#vNar').value||'').trim().slice(0,80)});
+  save();render();toast(t+' voucher No. '+no+' accepted ✓'+(inFY(S,date)?'':' (note: date is outside this financial year)'));
+ }
+ function exportCsv(){
+  if(!S.vouchers.length){toast('Nothing to export yet');return;}
+  const q=s=>'"'+String(s).replace(/"/g,'""')+'"';
+  const csv=['Date,Type,No,Debit,Credit,Amount,Narration'].concat([...S.vouchers].sort(sortV).map(v=>[v.date,v.type,v.no,q(v.dr),q(v.cr),v.amt,q(v.nar)].join(','))).join('\r\n');
+  download('day-book.csv',csv,'text/csv');toast('CSV downloaded ✓');
+ }
+ function download(name,text,type){
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1500);
+ }
+
+ // ---------- top actions ----------
+ function sample(){
+  const d=n=>{const t=new Date();t.setDate(Math.max(1,t.getDate()-n));return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');};
+  const lg=[['Cash','Cash-in-Hand'],['HDFC Bank','Bank Accounts'],['Owner Capital','Capital Account'],['Sales','Sales Accounts'],['Purchase','Purchase Accounts'],['Rent','Indirect Expenses'],['Salary','Indirect Expenses'],['Electricity','Indirect Expenses'],['Ravi Traders','Sundry Debtors'],['Kerala Suppliers','Sundry Creditors'],['Furniture','Fixed Assets']];
+  const vs=[['Receipt','HDFC Bank','Owner Capital',200000,'Capital introduced'],['Payment','Furniture','HDFC Bank',40000,'Shop furniture'],['Purchase','Purchase','Kerala Suppliers',60000,'Goods on credit'],['Sales','Ravi Traders','Sales',95000,'Goods sold on credit'],['Receipt','Cash','Ravi Traders',30000,'Part payment received'],['Payment','Kerala Suppliers','HDFC Bank',25000,'Part payment to supplier'],['Payment','Rent','Cash',8000,'Shop rent'],['Payment','Salary','HDFC Bank',15000,'Staff salary'],['Contra','Cash','HDFC Bank',10000,'Cash withdrawn'],['Sales','Cash','Sales',18500,'Cash sales'],['Payment','Electricity','Cash',2300,'Power bill']];
+  const cnt={};
+  let nm='Sample Traders',k=2;while(DB.companies.some(c=>c.company.toLowerCase()===nm.toLowerCase()))nm='Sample Traders '+(k++);
+  S={id:uid(),company:nm,fy:fyStartDefault(),addr:'Sample address, Thiruvananthapuram',gstin:'',created:Date.now(),ledgers:lg.map(x=>({name:x[0],group:x[1],open:0})),vouchers:vs.map((x,i)=>{cnt[x[0]]=(cnt[x[0]]||0)+1;return {id:Date.now()+i,type:x[0],no:cnt[x[0]],date:d(vs.length-i),dr:x[1],cr:x[2],amt:x[3],nar:x[4]};})};
+  DB.companies.push(S);DB.active=S.id;
+  save();selLedger='';dbType='All';dbQ='';view='dashboard';render();toast('Sample company added ✓');
+ }
+ $('#tpSample').addEventListener('click',sample);
+ $('#tpNew').addEventListener('click',()=>{go('company');setTimeout(()=>{const f=$('#coName');if(f)f.focus();},50);});
+ $('#tpSave').addEventListener('click',()=>{if(S&&save())toast('All companies saved ✓');});
+ $('#tpDelCo').addEventListener('click',()=>{if(S)deleteCompany(S.id);});
+ $('#tpBackup').addEventListener('click',()=>{if(!DB.companies.length){toast('Nothing to back up yet');return;}download('tally-prime-backup-'+today()+'.json',JSON.stringify({app:'aboo-tallyprime',version:2,active:DB.active,companies:DB.companies},null,1),'application/json');toast('Backup of '+DB.companies.length+' compan'+(DB.companies.length===1?'y':'ies')+' downloaded ✓');});
+ $('#tpRestore').addEventListener('change',e=>{
+  const f=e.target.files[0];e.target.value='';if(!f)return;
+  const rd=new FileReader();rd.onload=()=>{try{
+   const j=JSON.parse(rd.result),list=(j&&Array.isArray(j.companies)?j.companies.map(clean):[clean(j)]).filter(Boolean);if(!list.length)throw 0;
+   list.forEach(c=>{
+    if(DB.companies.some(x=>x.id===c.id))c.id=uid();
+    const base=c.company;let k=2;while(DB.companies.some(x=>x.company.toLowerCase()===c.company.toLowerCase()))c.company=base.slice(0,44)+' ('+(k++)+')';
+    DB.companies.push(c);});
+   S=list[0];DB.active=S.id;save();selLedger='';view='dashboard';render();toast('Restored '+list.length+' compan'+(list.length===1?'y':'ies')+' ✓');
+  }catch(_){toast('That file is not a valid backup');}};rd.readAsText(f);
+ });
+
+ render();
+})();
+</script></body></html>

@@ -1,0 +1,8 @@
+<div class="app-panel" id="discount" role="tabpanel"><div class="app-grid">
+  <div class="app-card glass-card"><h2>Discount Calculator</h2><p class="sub">Final price after one or two successive discounts, and how much you really save.</p>
+  <div class="fld"><label for="dcPrice">ORIGINAL PRICE (₹)</label><input id="dcPrice" type="number" inputmode="decimal" min="0" step="any" value="2999"></div>
+  <div class="add-row"><div class="fld"><label for="dcD1">DISCOUNT (%)</label><input id="dcD1" type="number" inputmode="decimal" min="0" max="100" step="any" value="20"></div><div class="fld"><label for="dcD2">EXTRA DISCOUNT (%)</label><input id="dcD2" type="number" inputmode="decimal" min="0" max="100" step="any" value="10"></div></div>
+  <p class="note">The extra discount is taken off the already-reduced price, so 20% + 10% is 28% in total, not 30%.</p></div>
+  <div class="app-card glass-card result"><div class="big-result profit"><small>YOU PAY</small><strong id="dcBig">₹0</strong></div>
+  <div class="kv"><div><span>You save</span><b id="dcSave">₹0</b></div><div><span>Price after first discount</span><b id="dcMid">₹0</b></div><div><span>Effective total discount</span><b id="dcEff">0%</b></div></div></div>
+</div></div>

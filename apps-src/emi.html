@@ -1,0 +1,11 @@
+<div class="app-panel" id="emi" role="tabpanel"><div class="app-grid">
+        <div class="app-card glass-card"><h2>EMI Loan Calculator</h2><p class="sub">Monthly instalment for a reducing-balance loan.</p>
+          <div class="fld"><label for="emiP">LOAN AMOUNT <b id="emiPv"></b></label><input id="emiPr" type="range" min="10000" max="10000000" step="10000" value="500000"><input id="emiP" type="number" min="0" step="1000" value="500000"></div>
+          <div class="fld"><label for="emiI">INTEREST RATE (p.a.) <b id="emiIv"></b></label><input id="emiIr" type="range" min="1" max="30" step="0.1" value="9.5"><input id="emiI" type="number" min="0" max="40" step="0.1" value="9.5"></div>
+          <div class="fld"><label for="emiT">TENURE <b id="emiTv"></b></label><div class="seg" id="emiUnitSeg" style="margin-bottom:8px"><button type="button" class="active" data-u="yr">Years</button><button type="button" data-u="mo">Months</button></div><input id="emiTr" type="range" min="1" max="30" step="1" value="5"><input id="emiT" type="number" min="1" max="30" step="1" value="5"></div></div>
+        <div class="app-card glass-card result"><div class="big-result"><small>MONTHLY EMI</small><strong id="emiBig">₹0</strong></div>
+          <div class="kv"><div><span>Principal</span><b id="emiPrin">₹0</b></div><div><span>Total interest</span><b id="emiTotalInt">₹0</b></div><div><span>Total payment</span><b id="emiTotalPay">₹0</b></div><div><span>Number of instalments</span><b id="emiMonths">0</b></div></div>
+          <div class="bar-split" aria-hidden="true"><i class="a" id="emiBarA" style="width:50%"></i><i class="b" id="emiBarB" style="width:50%"></i></div>
+          <div class="legend"><span id="emiPctA">principal</span><span class="b" id="emiPctB">interest</span></div></div>
+      </div></div>
+
