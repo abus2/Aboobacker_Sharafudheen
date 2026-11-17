@@ -1,0 +1,219 @@
+[
+ {
+  "id": "tally",
+  "title": "Accounts Book (Tally-style)",
+  "icon": "▤",
+  "desc": "Vouchers, day book, ledgers and trial balance — double-entry accounting.",
+  "file": "accounts-book-tally-style"
+ },
+ {
+  "id": "invoice",
+  "title": "Invoice Generator",
+  "icon": "🧾",
+  "desc": "Line items, GST split and a printable invoice.",
+  "file": "invoice-generator"
+ },
+ {
+  "id": "stock",
+  "title": "Stock Register",
+  "icon": "▦",
+  "desc": "Track items, quantity, stock value and potential profit.",
+  "file": "stock-register"
+ },
+ {
+  "id": "gst",
+  "title": "GST Calculator",
+  "icon": "%",
+  "desc": "Add or remove GST, with CGST / SGST split and custom rates.",
+  "file": "gst-calculator"
+ },
+ {
+  "id": "emi",
+  "title": "EMI Loan Calculator",
+  "icon": "₹",
+  "desc": "Monthly instalment, total interest and payment for any loan.",
+  "file": "emi-calculator"
+ },
+ {
+  "id": "sip",
+  "title": "SIP Growth Planner",
+  "icon": "↗",
+  "desc": "See how a monthly investment and lump sum can grow over time.",
+  "file": "sip-growth-calculator"
+ },
+ {
+  "id": "budget",
+  "title": "Budget Tracker",
+  "icon": "▤",
+  "desc": "Track income and expenses, see where money goes, export CSV.",
+  "file": "budget-tracker"
+ },
+ {
+  "id": "profit",
+  "title": "Profit &amp; Margin",
+  "icon": "±",
+  "desc": "Profit, loss, markup, margin and the price for a target margin.",
+  "file": "profit-margin-calculator"
+ },
+ {
+  "id": "fd",
+  "title": "FD / RD Calculator",
+  "icon": "◔",
+  "desc": "Maturity amount for fixed and recurring deposits.",
+  "file": "fd-rd-calculator"
+ },
+ {
+  "id": "breakeven",
+  "title": "Break-even Calculator",
+  "icon": "⚖",
+  "desc": "Units and sales needed to cover costs, plus margin of safety.",
+  "file": "break-even-calculator"
+ },
+ {
+  "id": "percent",
+  "title": "Percentage Calculator",
+  "icon": "÷",
+  "desc": "Percent of a number, percent change, discount and tax.",
+  "file": "percentage-calculator"
+ },
+ {
+  "id": "interest",
+  "title": "Simple &amp; Compound Interest",
+  "icon": "∑",
+  "desc": "Compare simple and compound interest on any amount.",
+  "file": "interest-calculator"
+ },
+ {
+  "id": "age",
+  "title": "Age Calculator",
+  "icon": "☺",
+  "desc": "Exact age in years, months and days, and days to next birthday.",
+  "file": "age-calculator"
+ },
+ {
+  "id": "bmi",
+  "title": "BMI Calculator",
+  "icon": "♥",
+  "desc": "Body mass index, category and healthy weight range.",
+  "file": "bmi-calculator"
+ },
+ {
+  "id": "split",
+  "title": "Bill Split &amp; Tip",
+  "icon": "÷",
+  "desc": "Add a tip and split any bill between friends.",
+  "file": "bill-split-calculator"
+ },
+ {
+  "id": "units",
+  "title": "Unit Converter",
+  "icon": "⇄",
+  "desc": "Length, weight, volume, speed and temperature conversion.",
+  "file": "unit-converter"
+ },
+ {
+  "id": "trip",
+  "title": "Trip Fuel Cost",
+  "icon": "⛽",
+  "desc": "Fuel needed, trip cost and cost per person.",
+  "file": "trip-cost-calculator"
+ },
+ {
+  "id": "hike",
+  "title": "Salary Hike Calculator",
+  "icon": "⬆",
+  "desc": "New salary and yearly increase after a percentage hike.",
+  "file": "salary-hike-calculator"
+ },
+ {
+  "id": "datediff",
+  "title": "Date Difference",
+  "icon": "▦",
+  "desc": "Days, weeks, months and weekdays between two dates.",
+  "file": "date-difference-calculator"
+ },
+ {
+  "id": "eligibility",
+  "title": "Loan Eligibility",
+  "icon": "✓",
+  "desc": "Estimate the loan you may qualify for from your income.",
+  "file": "loan-eligibility-calculator"
+ },
+ {
+  "id": "inflation",
+  "title": "Inflation Calculator",
+  "icon": "↯",
+  "desc": "Future cost of things and the lost value of money.",
+  "file": "inflation-calculator"
+ },
+ {
+  "id": "grade",
+  "title": "Marks &amp; Grade",
+  "icon": "★",
+  "desc": "Percentage, grade and marks needed for a target score.",
+  "file": "marks-grade-calculator"
+ },
+ {
+  "id": "cagr",
+  "title": "CAGR Calculator",
+  "icon": "◢",
+  "desc": "Yearly growth rate between two investment values.",
+  "file": "cagr-calculator"
+ },
+ {
+  "id": "dep",
+  "title": "Depreciation Calculator",
+  "icon": "▼",
+  "desc": "SLM or WDV depreciation with a year-wise schedule.",
+  "file": "depreciation-calculator"
+ },
+ {
+  "id": "ratio",
+  "title": "Financial Ratio Analysis",
+  "icon": "◐",
+  "desc": "Current ratio, debt-equity, margins, ROA and ROE.",
+  "file": "financial-ratio-analysis"
+ },
+ {
+  "id": "words",
+  "title": "Amount in Words (₹)",
+  "icon": "✎",
+  "desc": "Write rupee amounts in Indian words for cheques and vouchers.",
+  "file": "amount-in-words"
+ },
+ {
+  "id": "amort",
+  "title": "Loan Amortization Schedule",
+  "icon": "≣",
+  "desc": "Year-wise principal, interest and balance for any loan.",
+  "file": "loan-amortization-schedule"
+ },
+ {
+  "id": "discount",
+  "title": "Discount Calculator",
+  "icon": "％",
+  "desc": "Final price after one or two discounts, and your real saving.",
+  "file": "discount-calculator"
+ },
+ {
+  "id": "marketing",
+  "title": "Ad Campaign Metrics",
+  "icon": "◎",
+  "desc": "CTR, CPC, CPM, CPA, ROAS and ROI for digital marketing.",
+  "file": "ad-campaign-metrics"
+ },
+ {
+  "id": "utm",
+  "title": "UTM Link Builder",
+  "icon": "⛓",
+  "desc": "Build tracked campaign links for Google Analytics.",
+  "file": "utm-link-builder"
+ },
+ {
+  "id": "wordcount",
+  "title": "Word &amp; Character Counter",
+  "icon": "¶",
+  "desc": "Words, characters, sentences and reading time.",
+  "file": "word-character-counter"
+ }
+]
