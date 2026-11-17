@@ -1,0 +1,95 @@
+/* Tally Prime page + Certificates page */
+.tp{display:grid;gap:18px}
+.tp-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 20px;border-radius:18px}
+.tp-co{display:grid;gap:4px;min-width:min(100%,260px)}
+.tp-co label{font-size:9px;letter-spacing:1.6px;color:#8fa2d0;font-weight:700}
+.tp-co input{background:transparent;border:0;border-bottom:1px dashed var(--p-line);color:inherit;font:600 20px var(--display);padding:2px 0;outline:none;width:100%}
+.tp-co input:focus{border-bottom-color:var(--p-blue2)}
+.tp-co select{background:transparent;border:0;border-bottom:1px dashed var(--p-line);color:inherit;font:600 20px var(--display);padding:2px 0;outline:none;width:100%;cursor:pointer}
+.tp-co select:focus{border-bottom-color:var(--p-blue2)}.tp-co select option{background:#0b1a4a;color:#edf2ff;font:500 14px var(--font)}
+.tp-co small{font-size:11px;color:#8fa2d0;margin-top:2px}
+.tp-saved{align-self:center;font-size:11px;font-weight:600;color:var(--p-ok);white-space:nowrap}
+.tp-acts .mini-btn.primary{background:var(--p-blue);border-color:var(--p-blue2);color:#fff}
+.tp-acts button.mini-btn:disabled,#tpMenu button:disabled{opacity:.4;cursor:not-allowed}
+.tp-check{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:#b6c3e6;line-height:1.5;margin:4px 0 16px;cursor:pointer}.tp-check input{margin-top:3px}
+.tp-alter{margin-top:26px;padding-top:22px;border-top:1px solid var(--p-line)}
+.tp-acts{display:flex;gap:8px;flex-wrap:wrap}
+.tp-acts .mini-btn{display:inline-flex;align-items:center;cursor:pointer;text-decoration:none;color:#cfe0ff}
+.tp-layout{display:grid;grid-template-columns:230px 1fr;gap:18px;align-items:start}
+.tp-gate{padding:18px;border-radius:18px;position:sticky;top:90px}
+.tp-gate h3{font:600 15px var(--display);margin-bottom:10px;letter-spacing:-.02em}
+#tpMenu{display:grid;gap:3px}
+#tpMenu small{font-size:8px;letter-spacing:1.8px;color:#8fa2d0;font-weight:700;margin:12px 0 4px}
+#tpMenu button{text-align:left;background:none;border:1px solid transparent;color:#b6c3e6;padding:9px 12px;border-radius:10px;font:600 13px var(--font);cursor:pointer;transition:.2s}
+#tpMenu button:hover{background:rgba(58,107,255,.1);color:#fff}
+#tpMenu button.active{background:var(--p-blue);color:#fff;border-color:var(--p-blue2)}
+.tp-main{padding:28px;border-radius:18px;min-height:460px;min-width:0}
+.tp-main h2{font:600 26px var(--display);letter-spacing:-.04em;margin-bottom:6px}
+.tp-main .sub{font-size:12px;color:#a9b8de;margin-bottom:20px;line-height:1.7}
+.tp-h3{font:600 15px var(--display);margin:0 0 12px;letter-spacing:-.02em}
+.tp-main .tp-h3{margin-top:22px}.tp-box .tp-h3{margin-top:0}
+.tp-2{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.tp-box{min-width:0}
+.tp-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tp-row .fld input:disabled{opacity:.6}
+.tp-kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.tp-kpi{padding:14px 16px;border:1px solid var(--p-line);border-radius:14px;background:rgba(58,107,255,.06)}
+.tp-kpi small{display:block;font-size:9px;letter-spacing:1.4px;color:#8fa2d0;font-weight:700;margin-bottom:4px;text-transform:uppercase}
+.tp-kpi strong{font:700 19px var(--display)}.tp-kpi .ok,.tp-ok:not(.bad){color:var(--p-ok)}.tp-kpi .bad,.tp-ok.bad{color:var(--p-bad)}
+.tp-ok{font-size:12px;font-weight:600;margin-top:14px}
+.tp-quick{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.tp-quick button{display:grid;gap:2px;text-align:left;padding:13px 14px;border-radius:12px;border:1px solid var(--p-line);background:rgba(58,107,255,.06);color:inherit;font:600 13px var(--font);cursor:pointer;transition:.2s}
+.tp-quick button small{font-size:10px;font-weight:500;color:#8fa2d0}
+.tp-quick button:hover{background:var(--p-blue);border-color:var(--p-blue2);color:#fff}.tp-quick button:hover small{color:#dbe6ff}
+.tp-hint,.tp-warn{padding:12px 14px;border-radius:12px;border:1px dashed var(--p-blue2);background:rgba(58,107,255,.08);font-size:12px;line-height:1.7;margin-bottom:16px}
+.tp-warn{border-color:var(--p-warn);background:rgba(255,193,90,.08);margin:0}
+.tp-link{background:none;border:0;color:var(--p-blue2);font:600 12px var(--font);cursor:pointer;text-decoration:underline}
+.tp-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.tp-tools select,.tp-tools input{height:40px;border-radius:12px;border:1px solid var(--p-line);background:rgba(5,13,36,.7);color:#fff;padding:0 12px;font:13px var(--font);min-width:150px}
+.tp-tools input{flex:1;min-width:180px}
+.tp-chip{font-size:10px;letter-spacing:1.2px;font-weight:700;padding:6px 12px;border-radius:20px;border:1px solid var(--p-line);color:var(--p-blue2)}
+.tp-wrap{overflow-x:auto;border:1px solid var(--p-line);border-radius:14px}
+.tp-tb{width:100%;border-collapse:collapse;font-size:13px;min-width:360px}
+.tp-tb th{font-size:9px;letter-spacing:1.4px;color:#8fa2d0;text-align:left;padding:11px 14px;border-bottom:1px solid var(--p-line);background:rgba(58,107,255,.07);text-transform:uppercase}
+.tp-tb td{padding:10px 14px;border-bottom:1px solid var(--p-line);vertical-align:top}
+.tp-tb small{color:#8fa2d0;font-size:11px}
+.tp-tb .n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tp-tb .ind{padding-left:30px;color:#b6c3e6}
+.tp-tb .tp-grp td{font-weight:700;background:rgba(58,107,255,.04)}
+.tp-tb .tp-tot td{font-weight:700;border-top:2px solid var(--p-blue2);background:rgba(58,107,255,.09)}
+.tp-x{background:none;border:0;color:#8fa2d0;cursor:pointer;font-size:14px;padding:4px 8px;border-radius:8px}.tp-x:hover{color:#fff;background:var(--p-bad)}
+.tp-sheet{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.tp-sheet>div{border:1px solid var(--p-line);border-radius:14px;overflow:hidden}.tp-sheet .tp-tb{min-width:0}
+.tp-list{display:grid;gap:8px}
+.tp-ent{display:flex;justify-content:space-between;gap:12px;padding:11px 14px;border:1px solid var(--p-line);border-radius:12px;background:rgba(58,107,255,.05);font-size:13px}
+.tp-ent small{display:block;color:#8fa2d0;font-size:11px;margin-top:2px}.tp-ent span{font-weight:700;white-space:nowrap}
+.tp-disc{max-width:760px}
+@media(max-width:900px){.tp-layout{grid-template-columns:1fr}.tp-gate{position:static}#tpMenu{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}#tpMenu small{grid-column:1/-1}.tp-2,.tp-sheet{grid-template-columns:1fr}.tp-main{padding:20px}}
+@media(max-width:520px){.tp-row{grid-template-columns:1fr}}
+html[data-theme="light"] .tp-tools select,html[data-theme="light"] .tp-tools input{background:#fff;color:#0b1636}
+html[data-theme="light"] #tpMenu button{color:#33447a}html[data-theme="light"] #tpMenu button:hover{color:#fff}
+html[data-theme="light"] .tp-tb .ind,html[data-theme="light"] .tp-main .sub{color:#4a5a85}
+
+/* certificates page */
+.cert-tools{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+.cert-page-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.cert-page-grid .certificate-card{cursor:pointer;min-height:250px;gap:0}
+.cert-page-grid .certificate-card:focus-visible{outline:2px solid var(--p-blue2);outline-offset:3px}
+.cert-page-grid .tag-list{margin:8px 0 14px}
+.cert-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px;padding-top:12px;border-top:1px solid var(--p-line);font-size:10px;letter-spacing:1px}
+.cert-status{color:var(--p-ok);font-weight:700}.cert-more{color:var(--p-blue2);font-weight:700}
+.cert-modal{padding:30px;max-width:640px}
+.cm-head{display:flex;gap:14px;align-items:center;margin-bottom:16px}.cm-head small{font-size:10px;letter-spacing:1.6px;color:var(--p-blue2);font-weight:700}.cm-head h3{font:600 22px/1.25 var(--display);letter-spacing:-.03em}
+.cm-img{border:1px solid var(--p-line);border-radius:14px;overflow:hidden;margin-bottom:16px}.cm-img img{display:block;width:100%;height:auto}
+.cert-modal>p{font-size:13px;line-height:1.8;color:#b6c3e6;margin-bottom:16px}
+.cert-modal .pm-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}.cert-modal .pm-grid small{display:block;font-size:9px;letter-spacing:1.6px;color:#8fa2d0;font-weight:700;margin-bottom:6px}
+.cert-modal .pm-actions{display:flex;gap:10px;flex-wrap:wrap}
+@media(max-width:520px){.cert-modal .pm-grid{grid-template-columns:1fr}}
+html[data-theme="light"] .cert-modal>p{color:#4a5a85}
+
+/* V37: buttons + date fields inside the Tally workspace (match the dark theme) */
+.tp .button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 24px;border-radius:12px;background:linear-gradient(110deg,#3a6bff,#1d3fc7);color:#fff;border:1px solid #7da0ff;font:600 14px var(--font);cursor:pointer;box-shadow:0 8px 24px rgba(58,107,255,.25)}
+.tp .button:hover{box-shadow:0 10px 32px rgba(58,107,255,.5)}
+.tp .fld input[type=date]{height:44px;border-radius:12px;border:1px solid var(--p-line);background:rgba(5,13,36,.7);color:#fff;padding:0 14px;font:600 15px var(--font);outline:0;color-scheme:dark;width:100%}
+.tp .fld input[type=date]:focus{border-color:var(--p-blue2);box-shadow:0 0 0 3px rgba(58,107,255,.22)}
+html[data-theme="light"] .tp .fld input[type=date]{background:#fff;color:#0b1636;color-scheme:light}
